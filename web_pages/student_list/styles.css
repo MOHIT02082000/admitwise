@@ -2,16 +2,24 @@
     /* background-color: #e15959; */
     height:1117px;
     width: vw;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ef2121;
 }
 #left{
     height:100%;
     width: 15%;
     background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #151414;
 }
 #right{
     height: 100%;
     width: 85%;
     background-color: #151414;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #151414;
 }
-
 
