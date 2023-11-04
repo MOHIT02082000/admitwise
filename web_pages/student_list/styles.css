@@ -28,3 +28,128 @@
     border-color: #151414;
 }
 
+#left-header{
+
+  padding: 30px;
+}
+
+.course-cards{
+    width: 252px;
+    height: 100%;
+    padding: 10px;
+}
+
+.course-card {
+    width: 252px;
+    height: 102px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #F9F9F9; 
+    border-radius: 13px
+  }
+
+  .label {
+    width: 199px; 
+    height: 20px; 
+    color: #6E706F; 
+    font-size: 16px; 
+    font-family: "SF Pro Display-Bold", Helvetica;
+    font-weight: 700; 
+    line-height: 28px; 
+    letter-spacing: 0.35px; 
+    word-wrap: break-word;
+    padding: 10px;
+  }
+
+  .side-line{
+    width: 36.83px; 
+    height: 0px; 
+    transform: rotate(90deg); 
+    transform-origin: 0 0; 
+    border: 1px #6E706F solid;
+    margin-left: 10px;
+  }
+
+
+  .sub-label {
+    width: 113px;
+    height: 17px;
+    color: #6E706F;
+    font-size: 10px;
+    font-family: SF Pro Display;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.35px;
+    word-wrap: break-word;
+    margin-left: 20px;
+    display: flex; /* Add this property */
+    align-items: center; /* Add this property */
+  }
+  
+
+  .sub-section{
+    height: 36.83px;
+    align-self: center;
+  }
+
+
+  
+  .course-card {
+    width: 252px;
+    height: 102px;
+    margin-bottom: 50px;
+    background: #F9F9F9; 
+    border-radius: 13px
+  }
+
+  .course-card.active-card{
+    width: 252px;
+    height: 102px;
+    margin-bottom: 50px;
+    background: #316CF5; 
+    border-radius: 13px
+  } 
+
+  .label.active-card{
+    width: 199px; 
+    height: 20px; 
+    color: white; 
+    font-size: 16px; 
+    font-family: "SF Pro Display-Bold", Helvetica;
+    font-weight: 700; 
+    line-height: 28px; 
+    letter-spacing: 0.35px; 
+    word-wrap: break-word;
+    padding: 10px;
+  }
+
+  .side-line.active-card{
+    width: 36.83px; 
+    height: 0px; 
+    transform: rotate(90deg); 
+    transform-origin: 0 0; 
+    border: 1px white solid;
+    margin-left: 10px;
+  }
+
+
+  .sub-label.active-card{
+    width: 113px;
+    height: 17px;
+    color: white;
+    font-size: 10px;
+    font-family: SF Pro Display;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.35px;
+    word-wrap: break-word;
+    margin-left: 20px;
+    display: flex; /* Add this property */
+    align-items: center; /* Add this property */
+  }
+  
+
+  .sub-section.active-card{
+    height: 36.83px;
+    align-self: center;
+  }
