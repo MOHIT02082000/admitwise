@@ -2,29 +2,221 @@
     margin: 0;
     padding: 0;
 }
+body{
+    color: #5a5a5a
+}
 #container{
     /* background-color: #e15959; */
     height:99vh;
     width: 99.5vw;
-    border-style: solid;
+    /* border-style: solid;
     border-width: 2px;
-    border-color: #ef2121;
+    border-color: #ef2121; */
+    background-color: #f9f9f9;
     display: flex;
 }
 #left{
     height:100%;
     width: 15%;
     background-color: white;
-    border-style: solid;
+    /* border-style: solid;
     border-width: 2px;
-    border-color: #151414;
+    border-color: #151414; */
 }
 #right{
+    margin-left: 1vw;
     height: 100%;
-    width: 85%;
-    /* background-color: #151414; */
-    border-style: solid;
+    width: 82%;
+    background-color: #f9f9f9;
+    /* border-style: solid;
     border-width: 2px;
-    border-color: #151414;
+    border-color: #151414; */
 }
 
+#right-body-navbar{
+    height: 8%;
+    width: 100%;
+    display: flex;
+    /* border-style: solid;
+    border-width: 2px;
+    border-color: #f98282; */
+}
+
+#students{
+    margin:10px;
+    padding-left: 10px;
+    width: 50%;
+}
+
+#search-bar{
+    text-align: center;
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #3498db; 
+    border-radius: 5px;
+}
+
+#filter-batch{
+    text-align: center;
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #3498db; 
+    border-radius: 5px;
+    color: #636363;
+}
+
+#filter-batch{
+    text-align: center;
+    margin: 10px;
+    width: 100px;
+    height: 33px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #3498db; 
+    border-radius: 5px;
+    color: #636363;
+}
+
+#logout{
+    text-align: center;
+    margin: 10px;
+    width: 150px;
+    height: 33px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #316CF5; 
+    border-radius: 5px;
+    background-color: #316CF5;
+    color: white;
+    /* padding: 10px; */
+}
+
+#right-body-filters{
+    display: flex;
+}
+
+.filter{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: fit-content;
+    height: 23px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #e1e1e1; 
+}
+.filter-active{
+    color: #316CF5;
+    text-decoration: underline;
+    font-weight: bold;
+}
+#card-header{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.column{
+    text-align: center;
+    margin-top: 10px;
+    width: 190px;
+    height: 23px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:5px;
+    /* background-color: #ffffff; */
+    border-radius: 10px;
+    /* border: 2px solid #141313; */
+    margin-right: 0px; 
+    /* display: flex; */
+
+}
+.id{
+    width: 100px;
+}
+
+.student-card{
+    /* margin-left:20px; */
+    margin-right:20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    padding-top:15px;
+}
+
+.student{
+    text-align: center;
+    /* margin-top: 10px; */
+    width: 190px;
+    height: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:5px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    /* border: 2px solid #141313; */
+    margin-right: 0px; 
+    
+}
+.sid{
+    width: 60px;
+}
+.name{
+    width: 150px;
+}
+.email{
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+.date{
+    width: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+.status{
+    width: 80px;
+}
+.image{
+    display: flex;
+}
+.accepted{
+    background-color: #F4FDF9;
+    color: #5ADAA0;
+    height: 30px;
+    margin-top: -8px;
+    padding-top: 10px;
+    width: 80px;
+}
+
+.pending{
+    background-color: #FEFAF5;
+    color: #F5A157;
+    height: 30px;
+    margin-top: -8px;
+    padding-top: 10px;
+    width: 80px;
+}
+
+.rejected{
+    background-color: #FEF5F7;
+    color: #EA4E66;
+    height: 30px;
+    margin-top: -8px;
+    padding-top: 10px;
+    width: 80px;
+}
