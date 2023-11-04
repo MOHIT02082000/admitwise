@@ -1,10 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 #container{
     /* background-color: #e15959; */
-    height:1117px;
-    width: vw;
+    height:99vh;
+    width: 99.5vw;
     border-style: solid;
     border-width: 2px;
     border-color: #ef2121;
+    display: flex;
 }
 #left{
     height:100%;
@@ -17,7 +22,7 @@
 #right{
     height: 100%;
     width: 85%;
-    background-color: #151414;
+    /* background-color: #151414; */
     border-style: solid;
     border-width: 2px;
     border-color: #151414;
