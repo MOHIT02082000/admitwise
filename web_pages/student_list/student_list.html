@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student List</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
 </head>
 <body>
-    
+    <div id="container" class= "container">
+        <div id="left">
+            <div id="left-header">
+                <!-- Will house the UB logo and UB name -->
+            </div>
+            <div id="left-body">
+                <!-- will have all the cards for different courses -->
+                <div class="course-cards">
+                    <!-- card that will have the course name and some more data -->
+                </div>
+                <div class="course-cards active-card">
+                    <!-- add active-card to card list for highlighting the card -->
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="right-header">
+
+            </div>
+            <div id="right-body">
+                <div id="right-body-navbar">
+                    <!-- will have Student listwritten, search thingy, batch thingy, etc -->
+                </div>
+                <div id="right-body-filters">
+                    <!-- nav bar having all, pending, accepted, waitlisted -->
+                </div>
+                <div id="right-body-card-container">
+                    <!-- this will be scrollable -->
+                    <!-- will house all cards of students -->
+                    <div id="student-card">
+                        <!-- this will be the card that will be injected in the cards container -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

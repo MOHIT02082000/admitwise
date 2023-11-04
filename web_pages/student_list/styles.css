@@ -1,0 +1,17 @@
+#container{
+    /* background-color: #e15959; */
+    height:1117px;
+    width: vw;
+}
+#left{
+    height:100%;
+    width: 15%;
+    background-color: white;
+}
+#right{
+    height: 100%;
+    width: 85%;
+    background-color: #151414;
+}
+
+
