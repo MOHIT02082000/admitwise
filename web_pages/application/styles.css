@@ -11,9 +11,14 @@
     border-color: #ef2121;
     display: flex;
 }
+#nav-container{
+    height:50%;
+    width: 10%;
+}
+
 #left{
     height:50%;
-    width: 15%;
+    width: 50%;
 }
 
 #left-body{
@@ -22,3 +27,16 @@
     margin: 0;
     padding: 0;
 }
+
+#right{
+    width: 50%;
+}
+
+.content-main-card {
+    width: 438px;
+    height: 376px;
+    top: 0;
+    left: 0;
+    background-color: red;
+    border-radius: 21px;
+  }
