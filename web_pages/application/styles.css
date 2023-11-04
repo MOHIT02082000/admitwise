@@ -1,42 +1,80 @@
-* {
+/* Reset default margin and padding */
+html, body, div, h1, p {
     margin: 0;
     padding: 0;
 }
-#container{
-    /* background-color: #e15959; */
-    height:99vh;
-    width: 99.5vw;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #ef2121;
+
+/* Set styles for the container */
+.container {
+    display: flex;
+    align-items: stretch;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+/* Style the navigation container */
+#nav-container {
+    width: 100px;
+    background-color: #0074c2; /* Change the background color as needed */
+    display: flex;
+    align-items: center;
+}
+
+#nav-container img {
+    width: 80px; /* Adjust the image width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the image */
+    margin: 10px auto; /* Center the image vertically */
+}
+
+/* Style the body container */
+#body-container {
+    flex: 1;
     display: flex;
 }
-#nav-container{
-    height:50%;
-    width: 10%;
+
+/* Left section */
+#left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px; /* Add padding for spacing */
 }
 
-#left{
-    height:50%;
-    width: 50%;
+.content-main-card, .content-sub-card {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
-#left-body{
-    height:50%;
-    width: 15%;
-    margin: 0;
-    padding: 0;
+/* Right section */
+#right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px; /* Add padding for spacing */
 }
 
-#right{
-    width: 50%;
+#right-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
-.content-main-card {
-    width: 438px;
-    height: 376px;
-    top: 0;
-    left: 0;
-    background-color: red;
-    border-radius: 21px;
-  }
+#right-body-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#right-body-top-left, #right-body-top-right {
+    border: 1px solid #ccc;
+    flex: 1;
+    padding: 10px;
+}
+
+#right-body-bottom {
+    border: 1px solid #ccc;
+    flex: 1;
+    padding: 10px;
+}
