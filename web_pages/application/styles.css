@@ -41,11 +41,69 @@ html, body, div, h1, p {
     padding: 20px; /* Add padding for spacing */
 }
 
-.content-main-card, .content-sub-card {
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    padding: 10px;
+.profile-main-card {
+    background-color: #F9F9F9;
+    width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
 }
+
+.upper_profile {
+    display: flex;
+    align-items: center;
+}
+
+.left-column-profile-main-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.right-column-profile-main-card {
+    margin-left: 10px;
+}
+
+.right-column-profile-main-card h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.right-column-profile-main-card p.email {
+    color: #A9A9A9;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.bottom-column-profile-main-card .notes {
+    background-color: #F1F1F1;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    color: #737373;
+    margin-top: 10px;
+}
+
+.bottom-column-profile-main-card .buttons {
+    margin-top: 10px;
+}
+
+.buttons button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+
+
+/* nama ends*/
 
 /* Right section */
 #right {
