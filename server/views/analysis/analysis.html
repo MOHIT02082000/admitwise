@@ -55,23 +55,23 @@
                     <div class = "university-values">
                         <div class="card">
                             <div class="sidebyside">
-                                <div class="title">University Values</div>
+                                <div class="title">Overall Evaluation</div>
                                 <div class="average">4.2</div>
                             </div>
                             <div class="value">
-                              <div class="bar-text">Inclusion</div>
+                              <div class="bar-text">Academic Record</div>
                               <input type="range" min="1" max="5" value="4" class="slider" id="myRange1" oninput="updateSlider(this)">
                             </div>
                             <div class="value">
-                              <div class="bar-text">Learning</div>
+                              <div class="bar-text">Statement of Purpose</div>
                               <input type="range" min="1" max="5" value="2" class="slider" id="myRange2" oninput="updateSlider(this)">
                             </div>
                             <div class="value">
-                              <div class="bar-text">Safety</div>
+                              <div class="bar-text">Letters of Recommendation</div>
                               <input type="range" min="1" max="5" value="4" class="slider" id="myRange3" oninput="updateSlider(this)">
                             </div>
                             <div class="value">
-                              <div class="bar-text">Integrity</div>
+                              <div class="bar-text">Diversity</div>
                               <input type="range" min="1" max="5" value="2" class="slider" id="myRange4" oninput="updateSlider(this)">
                             </div>
                           </div>
@@ -82,22 +82,22 @@
                     <div class = "school-values">
                         
                             <div class="card">
-                                <div class="title">School of Computer Science Values</div>
+                                <div class="title">School of Computer Science Evaluation</div>
                                 <div class="average">4.2</div>
                                 <div class="value">
-                                  <div class="bar-text">Inclusion</div>
+                                  <div class="bar-text">Research Potential</div>
                                   <input type="range" min="1" max="5" value="4" class="slider" id="myRange5" oninput="updateSlider(this)">
                                 </div>
                                 <div class="value">
-                                  <div class="bar-text">Learning</div>
+                                  <div class="bar-text">Work Experience</div>
                                   <input type="range" min="1" max="5" value="2" class="slider" id="myRange6" oninput="updateSlider(this)">
                                 </div>
                                 <div class="value">
-                                  <div class="bar-text">Safety</div>
+                                  <div class="bar-text">Test Scores</div>
                                   <input type="range" min="1" max="5" value="4" class="slider" id="myRange7" oninput="updateSlider(this)">
                                 </div>
                                 <div class="value">
-                                  <div class="bar-text">Integrity</div>
+                                  <div class="bar-text">Technical capabilities</div>
                                   <input type="range" min="1" max="5" value="2" class="slider" id="myRange8" oninput="updateSlider(this)">
                                 </div>
                               </div>
@@ -115,29 +115,45 @@
                     <div id="right-body-top">
                         
                         <div id="right-body-top-left">
+                          <!--  -->
                             <div id="top-section">
                                 <div class="file-section-header">Key Statistics</div>
                                 <div class="statistics">
-                                  <div class="scores">
-                                    <h3>SCORES</h3>
-                                    <p><span class="dot" style="color: orange;"></span> GRE - 8.5 / 10.0</p>
-                                    <p><span class="dot" style="color: orange;"></span> GPA - 316 / 340</p>
-                                    <p><span class="dot" style="color: orange;"></span> IELTS - 7.5 / 9.0</p>
-                                  </div>
                                   <div class="achievements">
-                                    <h3>ACHIEVEMENTS</h3>
-                                    <p><span class="dot" style="color: blue;"></span> Mentor at Grace Hopper Conference 2023.</p>
-                                    <p><span class="dot" style="color: blue;"></span> Lead Android Developer and Board of Management at ADG.</p>
-                                    <p><span class="dot" style="color: blue;"></span> 1st Prize at MLH Local - Hackday - invented a human sentiment.</p>
+                                    <h3>Education</h3>
+                                    <p id="degree"><span class="dot" style="background-color: #316CF5;"></span> B.Tech Computer Engineering</p>
+                                    <p id="univeristy"><span class="dot" style="background-color: #316CF5;"></span> S.V.N.I.T. Surat</p>
+                                    <p id="GPA"><span class="dot" style="background-color: #316CF5;"></span> GPA: 8/10 </p>
+                                    <p id="tier"><span class="dot" style="background-color: #316CF5;"></span> Tier-1 college</p>
+                                  </div>
+                                  <div class="scores" style="width: 65%; padding-right: 10px;">
+                                    <h3>Research</h3>
+                                    <p id="research1"><span class="dot" style="background-color: #FF715B;"></span>Teaching Assistant for Data structures and algorithms</p>
+                                    <p id="research2"><span class="dot" style="background-color: #FF715B;"></span>Springer Nature Conference: Research paper presented on Machine Learning</p>
+                                    <!-- <p><span class="dot" style="color: #316CF5;"></span> IELTS - 7.5 / 9.0</p> -->
                                   </div>
                                 </div>
-                                <div class="extra-curricular">
-                                  <h3>EXTRA-CURRICULAR</h3>
-                                  <p><span class="dot" style="color: green;"></span> 1st Prize at MLH Local – Hackday – invented a human sentiment analysis using classification.</p>
-                                  <p><span class="dot" style="color: green;"></span> 1st Prize at MLH Local – Hackday – invented a human sentiment analysis using classification.</p>
-                                </div>
+                                <div class="extra-curricular" style="display: flex;">
+                                  <div id="A" style="width: 100%;">
+                                    <h3>Work experience</h3>
+                                    <p id="workex1"><span class="dot" style="background-color: #04E762;"></span>MP Engineers - Software Engineer</p>
+                                    <p id="duration1" style="padding-left: 15px;"></span>3 Months: Internship</p>
+                                    <p id="workex2"><span class="dot" style="background-color: #04E762;"></span>I.I.M. Udaipur - Software Engineer</p>
+                                    <p id="duration2" style="padding-left: 15px;">3 Months: Internship</p>
 
+                                  </div>
+                                  <div class="scores" style="padding-left: 15px;">
+                                    <h3>Test Scores</h3>
+                                    <p id="score2"><span class="dot" style="background-color: #FFD15B;"></span> GRE - 316 / 340</p>
+                                    <p id="score1"><span class="dot" style="background-color: #FFD15B;"></span> TOEFL - 112/120</p>
+                                    <p id="score3"><span class="dot" style="background-color: #FFD15B;"></span> IELTS - 7.5 / 9.0</p>
+                                  </div>
+                                  
+                                    
+                                  <!-- <p><span class="dot" style="color: green;"></span> 1st Prize at MLH Local – Hackday – invented a human sentiment analysis using classification.</p> -->
+                                </div>
                             </div>
+                          <!--  -->
                             <div id="bottom-section">
                                 <div class="file-section">
                                     <div class="file-section-header">Files</div>
