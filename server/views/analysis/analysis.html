@@ -4,8 +4,290 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/analysisStyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">            
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts/dist/apexcharts.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
 </head>
 <body>
+    <div id="container" class= "container">
+        <div id="nav-container" style="width: 80px; height: 500px;">
+                <img src="/static/images/left_nav.png" style="width: 100px; height: 600px; ;" alt="left nav">
+        </div>
+
+        <div id = "body-container">
+            <div id = "header">
+            </div>
+        
+            <div id="left">
+                <div id = "left-body">
+                    <!-- naman starts -->
+                    <div class="profile-main-card">
+                        <div class="upper_profile">
+                            <div class="left-column-profile-main-card">
+                                <img src="/static/images/profile_pic.png" alt="Naman Khurpia">
+                            </div>
+                            <div class="right-column-profile-main-card">
+                                <h2>Naman Khurpia</h2>
+                                <p class="email">namankhurpia2@gmail.com</p>
+                                <p class="email">Application Received - 12/04/2023</p>
+                                <p class="email">namankhurpia2@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="bottom-column-profile-main-card">
+                            <div class="notes">
+                                <p>Wore these with my training tee and pods to a graduation bbq and the young bucks was all over it. Love the look and feel.</p>
+                            </div>
+                            <div class="buttons">
+                                <button type="button">Accept</button>
+                                <button type="button">Reject</button>
+                                <button type="button">Waitlist</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    
+                    <div class = "university-values">
+                        <div class="card">
+                            <div class="sidebyside">
+                                <div class="title">University Values</div>
+                                <div class="average">4.2</div>
+                            </div>
+                            <div class="value">
+                              <div class="bar-text">Inclusion</div>
+                              <input type="range" min="1" max="5" value="4" class="slider" id="myRange1" oninput="updateSlider(this)">
+                            </div>
+                            <div class="value">
+                              <div class="bar-text">Learning</div>
+                              <input type="range" min="1" max="5" value="2" class="slider" id="myRange2" oninput="updateSlider(this)">
+                            </div>
+                            <div class="value">
+                              <div class="bar-text">Safety</div>
+                              <input type="range" min="1" max="5" value="4" class="slider" id="myRange3" oninput="updateSlider(this)">
+                            </div>
+                            <div class="value">
+                              <div class="bar-text">Integrity</div>
+                              <input type="range" min="1" max="5" value="2" class="slider" id="myRange4" oninput="updateSlider(this)">
+                            </div>
+                          </div>
+                    </div>
+
+                    
+                    
+                    <div class = "school-values">
+                        
+                            <div class="card">
+                                <div class="title">School of Computer Science Values</div>
+                                <div class="average">4.2</div>
+                                <div class="value">
+                                  <div class="bar-text">Inclusion</div>
+                                  <input type="range" min="1" max="5" value="4" class="slider" id="myRange5" oninput="updateSlider(this)">
+                                </div>
+                                <div class="value">
+                                  <div class="bar-text">Learning</div>
+                                  <input type="range" min="1" max="5" value="2" class="slider" id="myRange6" oninput="updateSlider(this)">
+                                </div>
+                                <div class="value">
+                                  <div class="bar-text">Safety</div>
+                                  <input type="range" min="1" max="5" value="4" class="slider" id="myRange7" oninput="updateSlider(this)">
+                                </div>
+                                <div class="value">
+                                  <div class="bar-text">Integrity</div>
+                                  <input type="range" min="1" max="5" value="2" class="slider" id="myRange8" oninput="updateSlider(this)">
+                                </div>
+                              </div>
+                        
+                    </div>
+                <!-- naman ends -->
+                </div>
+        </div>
+
+
+        <div id="right">
+
+            <div id="right-body">
+
+                    <div id="right-body-top">
+                        
+                        <div id="right-body-top-left">
+                            <div id="top-section">
+                                <div class="file-section-header">Key Statistics</div>
+                                <div class="statistics">
+                                  <div class="scores">
+                                    <h3>SCORES</h3>
+                                    <p><span class="dot" style="color: orange;"></span> GRE - 8.5 / 10.0</p>
+                                    <p><span class="dot" style="color: orange;"></span> GPA - 316 / 340</p>
+                                    <p><span class="dot" style="color: orange;"></span> IELTS - 7.5 / 9.0</p>
+                                  </div>
+                                  <div class="achievements">
+                                    <h3>ACHIEVEMENTS</h3>
+                                    <p><span class="dot" style="color: blue;"></span> Mentor at Grace Hopper Conference 2023.</p>
+                                    <p><span class="dot" style="color: blue;"></span> Lead Android Developer and Board of Management at ADG.</p>
+                                    <p><span class="dot" style="color: blue;"></span> 1st Prize at MLH Local - Hackday - invented a human sentiment.</p>
+                                  </div>
+                                </div>
+                                <div class="extra-curricular">
+                                  <h3>EXTRA-CURRICULAR</h3>
+                                  <p><span class="dot" style="color: green;"></span> 1st Prize at MLH Local – Hackday – invented a human sentiment analysis using classification.</p>
+                                  <p><span class="dot" style="color: green;"></span> 1st Prize at MLH Local – Hackday – invented a human sentiment analysis using classification.</p>
+                                </div>
+
+                            </div>
+                            <div id="bottom-section">
+                                <div class="file-section">
+                                    <div class="file-section-header">Files</div>
+                                    <div class="file-buttons">
+                                      <button class="file-btn active">GRE</button>
+                                      <button class="file-btn">SOP</button>
+                                      <button class="file-btn">RESUME</button>
+                                      <button class="file-btn">IELTS</button>
+                                      <button class="file-btn">LOR1</button>
+                                      <button class="file-btn">LOR2</button>
+                                      <button class="file-btn">LOR3</button>
+                                    </div>
+                                  </div>
+                            </div>
+
+                        </div>
+                        
+
+                        <div id = "right-body-top-right">
+                            <div id="chart"></div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div id="right-body-bottom">
+                        <div class="right-body-bottom-content">
+                            <div class="section-header">Statement of Purpose</div>
+                            <div class="content-scrollable">
+                            <p class="content-paragraph">
+                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                              industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+                              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+                              Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                              PageMaker including versions of Lorem Ipsum.<br /><br />It is a long established fact that a reader will be
+                              distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                              it has a more-or-less normal distribution of letters, as opposed to using &#39;Content here, content here&#39;,
+                              making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum
+                              as their default model text, and a search for &#39;lorem ipsum&#39; will uncover many web sites still in their
+                              infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
+                              humour and the like).<br /><br />ure from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                              professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, It is a long
+                              established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                              The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+                              &#39;Content here, content here&#39;, making it look like readable English. Many desktop publishing packages and
+                              web page editors now use Lorem Ipsum as their default model text, and a search for &#39;lorem ipsum&#39; will
+                              uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
+                              accident, sometimes on purpose (injected humour and the like).<br /><br />u2000 years old. Richard McClintock, a
+                              Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, u2000
+                              years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the
+                              more obscure Latin words, u2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+                            </p>
+                        </div>
+                          </div>
+                    </div>
+
+            </div>
+        </div>
+        
+    </div>
     
+
+    <div class="footer">
+        <div >
+            <div >POWERED BY ADMIT WISE</div>
+        </div>
+    </div>
+    
+    </div>
+    <script>
+        function updateSlider(slider) {
+          const value = ((slider.value - slider.min) / (slider.max - slider.min)) * 100;
+          slider.style.background = `linear-gradient(to right, #FFD700 0%, #FFD700 ${value}%, #d3d3d3 ${value}%, #d3d3d3 100%)`;
+        }
+        
+       
+        updateSlider(document.getElementById('myRange1'));
+        updateSlider(document.getElementById('myRange2'));
+        updateSlider(document.getElementById('myRange3'));
+        updateSlider(document.getElementById('myRange4'));
+                
+        updateSlider(document.getElementById('myRange5'));
+        updateSlider(document.getElementById('myRange6'));
+        updateSlider(document.getElementById('myRange7'));
+        updateSlider(document.getElementById('myRange8'));
+
+
+
+
+        const options = {
+    series: [{
+      name: 'Maths',
+      data: [32, 44, 67, 36] // Your Maths scores
+    }, {
+      name: 'Science',
+      data: [41, 79, 85, 51] // Your Science scores
+    }, {
+      name: 'Physics',
+      data: [65, 52, 67, 82] // Your Physics scores
+    }, {
+      name: 'Comp Science',
+      data: [72, 62, 65, 84] // Your Comp Science scores
+    }],
+    chart: {
+      height: 350,
+      type: 'line',
+      zoom: {
+        enabled: false
+      },
+      toolbar: {
+        show: true
+      },
+      dropShadow: {
+        enabled: true,
+        top: 3,
+        left: 2,
+        blur: 4,
+        opacity: 0.1,
+      }
+    },
+    colors: ['#008FFB', '#00E396', '#FEB019', '#FF4560'],
+    dataLabels: {
+      enabled: false,
+    },
+    stroke: {
+      curve: 'smooth',
+      width: 3
+    },
+    title: {
+      text: 'Undergrad Scores',
+      align: 'left'
+    },
+    markers: {
+      size: 4,
+    },
+    grid: {
+      row: {
+        colors: ['#f8f8f8', 'transparent'], // takes an array which will be repeated on columns
+        opacity: 0.5
+      },
+    },
+    xaxis: {
+      categories: ['Freshman', 'Sophomore', 'Junior', 'Senior'],
+    }
+  };
+
+  const chart = new ApexCharts(document.querySelector("#chart"), options);
+  chart.render();
+
+    </script>
 </body>
+
 </html>
