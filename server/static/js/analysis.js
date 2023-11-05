@@ -44,6 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
         // files.lor1
         // files.lor2
         // files.lor3
+        
+        filesDisplay(files);
 
 
         // window.alert(name + email +date +notes +uni_values);
@@ -52,3 +54,73 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("Fetch error:", error);
     });
 });
+
+// let sopData;
+// let pdfUrls;
+
+// Define the displayContent function outside of the filesDisplay function
+function displayContent(buttonId, sopData, pdfUrls) {
+    console.log("entered function");
+    const contentDisplay = document.getElementById("content-display");
+    const contentHeader = document.getElementById("content-header");
+    
+    if (buttonId === "sop") {
+        contentHeader.innerHTML = "Statement of Purpose";
+        contentDisplay.innerHTML = "";
+        contentDisplay.innerHTML = sopData; // Display SOP HTML
+
+    } else if (pdfUrls.hasOwnProperty(buttonId)) {
+        contentHeader.innerHTML = buttonId.toUpperCase();
+        contentDisplay.innerHTML = `<iframe src="${pdfUrls[buttonId]}" width="100%" height="600"></iframe>`; // Display PDF
+    }
+}
+
+function filesDisplay(files) {
+    let sopData = files.sop;
+    let pdfUrls = {
+        gre: files.gre,
+        resume: files.resume,
+        ielts: files.ielts,
+        transcript: files.transcript,
+        lor1: files.lor1,
+        lor2: files.lor2,
+        lor3: files.lor3
+    };
+
+    console.log(sopData);
+    console.log(pdfUrls);
+    
+    // Add event listeners to buttons
+    const buttons = document.querySelectorAll(".file-btn");
+    buttons.forEach(button => {
+        button.addEventListener("click", function () {
+            // Remove "active" class from all buttons
+            buttons.forEach(btn => btn.classList.remove("active"));
+            
+            // Add "active" class to the clicked button
+            button.classList.add("active");
+            
+            // Call the displayContent function with the button's id
+            displayContent(button.id, sopData, pdfUrls);
+        });
+    });
+
+    // Initially display SOP data
+    displayContent("sop", sopData, pdfUrls);
+}
+
+
+const rightBodyBottom = document.getElementById("right-body-bottom");
+const content = document.querySelector(".content");
+
+content.addEventListener("scroll", function () {
+    const scrollHeight = content.scrollHeight;
+    const clientHeight = content.clientHeight;
+
+    if (scrollHeight > clientHeight) {
+        rightBodyBottom.style.height = scrollHeight + "px";
+    } else {
+        rightBodyBottom.style.height = "auto";
+    }
+});
+
