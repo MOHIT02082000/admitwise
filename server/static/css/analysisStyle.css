@@ -378,10 +378,20 @@ html, body, h1, p {
     margin-bottom: 20px;
   }
   
+  .education {
+    width: 65%;
+  }
+  .research{
+    width: 65%;
+    padding-right: 10px;
+  }
   .scores{
     width: 70%;
+    padding-left: 15px;
   }
-  
+  .workex{
+    width: 100%;
+  }
   .achievements {
     width: 65%;
   }

@@ -24,10 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const uni_values =  data.uniValues;
         const department_values = data.departmentValues; // array of json objects
         const key_stats = data.keyStats;
-        // keystats.workexp
-        // keystats.university
-        // keystats.GPA
-        // keystats.GRE
+        update_key_stats(key_stats);
+        // keystats.education -> array of 4 items
+        // keystats.research -> array of 2 strings
+        // keystats.workex -> array of 4 items
+        // keystats.scores -> array of 3 items
         // keystats.IELTS
         // keystats.achievement1
         // keystats.achievement2
@@ -54,6 +55,30 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("Fetch error:", error);
     });
 });
+
+function update_key_stats(key_stats){
+    // update education
+    document.getElementById("degree").textContent = key_stats.education.degree;
+    document.getElementById("univeristy").textContent = key_stats.education.univeristy;
+    document.getElementById("GPA").textContent = key_stats.education.GPA;
+    document.getElementById("tier").textContent = key_stats.education.tier;
+
+
+    // update research
+    document.getElementById("research1").textContent = key_stats.research.research1;
+    document.getElementById("research2").textContent = key_stats.research.research2;
+
+    // update workex
+    document.getElementById("workex1").textContent = key_stats.workexp.workex1;
+    document.getElementById("duration1").textContent = key_stats.workexp.duration1;
+    document.getElementById("workex2").textContent = key_stats.workexp.workex2;
+    document.getElementById("duration2").textContent = key_stats.workexp.duration2;
+    
+    // update scores
+    document.getElementById("score1").textContent = key_stats.scores.score1;
+    document.getElementById("score2").textContent = key_stats.scores.score2;
+    document.getElementById("score3").textContent = key_stats.scores.score3;
+}
 
 // let sopData;
 // let pdfUrls;
