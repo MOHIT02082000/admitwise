@@ -45,7 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
         // files.lor2
         // files.lor3
         
-        filesDisplay(files);
+        displayFiles(files);
+        displayGraph(undergradscores);
+
 
         display_profile_main(data);
         display_values_box_one(data);
@@ -59,8 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// let sopData;
-// let pdfUrls;
 
 // Define the displayContent function outside of the filesDisplay function
 function displayContent(buttonId, sopData, pdfUrls) {
@@ -79,7 +79,7 @@ function displayContent(buttonId, sopData, pdfUrls) {
     }
 }
 
-function filesDisplay(files) {
+function displayFiles(files) {
     let sopData = files.sop;
     let pdfUrls = {
         gre: files.gre,
@@ -115,16 +115,17 @@ function filesDisplay(files) {
 
 
 const rightBodyBottom = document.getElementById("right-body-bottom");
-const content = document.querySelector(".content");
+const contentDisplay = document.getElementById("content-display");
 
-content.addEventListener("scroll", function () {
-    const scrollHeight = content.scrollHeight;
-    const clientHeight = content.clientHeight;
+contentDisplay.addEventListener("scroll", function () {
+    // Get the scroll height and client height of the content
+    const scrollHeight = contentDisplay.scrollHeight;
+    const clientHeight = contentDisplay.clientHeight;
 
     if (scrollHeight > clientHeight) {
-        rightBodyBottom.style.height = scrollHeight + "px";
+        rightBodyBottom.style.height = scrollHeight + "px"; // Expand the div
     } else {
-        rightBodyBottom.style.height = "auto";
+        rightBodyBottom.style.height = "auto"; // Return to the original state
     }
 });
 
@@ -191,3 +192,99 @@ function display_values_box_two(data)
   const averageValue = (Object.values(schoolValues).reduce((acc, val) => acc + val, 0) / Object.values(schoolValues).length).toFixed(1);
   document.querySelector('.school-values .average').textContent = averageValue;
 }
+const options = {
+    series: [
+      {
+        name: 'Algorithms',
+        data: [], // Initialize with empty data
+      },
+      {
+        name: 'Computer Science',
+        data: [],
+      },
+      {
+        name: 'Operating Systems',
+        data: [],
+      },
+      {
+        name: 'Overall GPA',
+        data: [],
+      },
+    ],
+    chart: {
+      height: 350,
+      type: 'line',
+      zoom: {
+        enabled: false,
+      },
+      toolbar: {
+        show: true,
+      },
+      dropShadow: {
+        enabled: true,
+        top: 3,
+        left: 2,
+        blur: 4,
+        opacity: 0.1,
+      },
+    },
+    colors: ['#008FFB', '#00E396', '#FEB019', '#FF4560'],
+    dataLabels: {
+      enabled: false,
+    },
+    stroke: {
+      curve: 'smooth',
+      width: 3,
+    },
+    title: {
+      text: 'Undergrad Scores',
+      align: 'left',
+    },
+    markers: {
+      size: 4,
+    },
+    grid: {
+      row: {
+        colors: ['#f8f8f8', 'transparent'],
+        opacity: 0.5,
+      },
+    },
+    xaxis: {
+      categories: ['Freshman', 'Sophomore', 'Junior', 'Senior'],
+    },
+  };
+  
+//   const chart = new ApexCharts(document.querySelector('#chart'), options);
+//   chart.render();
+  
+  function displayGraph(undergradscores) {
+    // Update the series data with the provided scores
+    chart.updateSeries([
+      {
+        name: 'Algorithms',
+        data: undergradscores.Algorithms, // Update with Algorithms scores
+      },
+      {
+        name: 'Computer Science',
+        data: undergradscores.Computer_Science, // Update with Computer Science scores
+      },
+      {
+        name: 'Operating Systems',
+        data: undergradscores.Operating_Systems, // Update with Operating Systems scores
+      },
+      {
+        name: 'Overall GPA',
+        data: undergradscores.GPA_Overall, // Update with Overall GPA scores
+      },
+    ]);
+  }
+  
+  displayGraph(undergradscores);
+  
+
+
+
+// function displayGraph(undergradscores){
+//     console.log(undergradscores.Algorithms);
+
+// }
