@@ -1,3 +1,6 @@
+// Define the chart variable at the top level of your script.
+let chart;
+
 document.addEventListener("DOMContentLoaded", function () {
     // URL of the API endpoint
     const id = localStorage.getItem("admit_wise_id");   
@@ -46,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // files.lor3
         
         displayFiles(files);
+        initChart();
         displayGraph(undergradscores);
 
 
@@ -197,11 +201,13 @@ function display_values_box_two(data)
 
 
 
-const options = {
+// Function to initialize the chart.
+function initChart() {
+  const options = {
     series: [
       {
         name: 'Algorithms',
-        data: [], // Initialize with empty data
+        data: [],
       },
       {
         name: 'Computer Science',
@@ -214,72 +220,82 @@ const options = {
       {
         name: 'Overall GPA',
         data: [],
-      },
+      }
     ],
     chart: {
       height: 350,
       type: 'line',
       zoom: {
-        enabled: false,
+        enabled: false
       },
       toolbar: {
-        show: true,
+        show: true
       },
       dropShadow: {
         enabled: true,
         top: 3,
         left: 2,
         blur: 4,
-        opacity: 0.1,
-      },
+        opacity: 0.1
+      }
     },
     colors: ['#008FFB', '#00E396', '#FEB019', '#FF4560'],
     dataLabels: {
-      enabled: false,
+      enabled: false
     },
     stroke: {
       curve: 'smooth',
-      width: 3,
+      width: 3
     },
     title: {
       text: 'Undergrad Scores',
-      align: 'left',
+      align: 'left'
     },
     markers: {
-      size: 4,
+      size: 4
     },
     grid: {
       row: {
         colors: ['#f8f8f8', 'transparent'],
-        opacity: 0.5,
-      },
+        opacity: 0.5
+      }
     },
     xaxis: {
-      categories: ['Freshman', 'Sophomore', 'Junior', 'Senior'],
-    },
+      categories: ['Freshman', 'Sophomore', 'Junior', 'Senior']
+    }
   };
-  
-//   const chart = new ApexCharts(document.querySelector('#chart'), options);
-//   chart.render();
-  
+
+  chart = new ApexCharts(document.querySelector('#chart'), options);
+  chart.render();
+}
+
   function displayGraph(undergradscores) {
+    
+
+    console.log(undergradscores)
+
+    // Convert the string values to actual arrays of numbers
+    const undergradScores = Object.fromEntries(
+        Object.entries(undergradscores).map(([key, value]) => [key, JSON.parse(value)])
+    );
+    
     // Update the series data with the provided scores
     chart.updateSeries([
       {
         name: 'Algorithms',
-        data: undergradscores.Algorithms, // Update with Algorithms scores
+        data: undergradScores.Algorithms, // Update with Algorithms scores
       },
       {
         name: 'Computer Science',
-        data: undergradscores.Computer_Science, // Update with Computer Science scores
+        data: undergradScores.Computer_Science, // Update with Computer Science scores
       },
       {
         name: 'Operating Systems',
-        data: undergradscores.Operating_Systems, // Update with Operating Systems scores
+        data: undergradScores.Operating_Systems, // Update with Operating Systems scores
       },
       {
         name: 'Overall GPA',
-        data: undergradscores.GPA_Overall, // Update with Overall GPA scores
+        data: undergradScores.GPA_Overall, // Update with Overall GPA scores
       },
     ]);
   }
