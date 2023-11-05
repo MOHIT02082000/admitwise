@@ -201,7 +201,7 @@ body{
 .email{
     width: 250px;
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     text-align: left;
 }
 .date{

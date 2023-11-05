@@ -40,13 +40,13 @@ def root():
     return "root page"
 
 # route to serve students list page
-@app.get("/students/")
+@app.get("/students")
 def student_list_page():
     html_file_path = Path("./views/student_list/index.html")
     return FileResponse(html_file_path)
 
 # route to serve student's application page
-@app.get("/students/analysis")
+@app.get("/analysis")
 def student_application_page():
     html_file_path = Path("./views/analysis/analysis.html")
     return FileResponse(html_file_path)
@@ -68,8 +68,8 @@ def student_list_page(course):
             "course": doc["course"]
         }
         data.append(formatted_doc)
-    print(data)
-    serialized_data = json.dumps(data)
+    # print(data)
+    # serialized_data = json.dumps(data)
     return JSONResponse(content=data)
 
 
