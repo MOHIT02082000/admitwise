@@ -326,10 +326,10 @@ html, body, h1, p {
   }
   
   .file-section-header {
-    font-size: 14px; /* Reduced font size */
+    font-size: 16px; /* Reduced font size */
     color: #414d55;
     margin-bottom: 5px; /* Reduced margin */
-    font-family: "Poppins", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
   }
   
@@ -345,7 +345,7 @@ html, body, h1, p {
     border-radius: 10px; /* Reduced border radius */
     padding: 5px 10px; /* Reduced padding */
     cursor: pointer;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 12px; /* Reduced font size */
     outline: none;
     transition: background-color 0.3s, color 0.3s;
@@ -379,6 +379,8 @@ html, body, h1, p {
   
   .statistics {
     display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
     /* justify-content: space-between; */
     /* margin-bottom: 20px; */
     /* align-items: left; */
@@ -386,6 +388,7 @@ html, body, h1, p {
   
   .education {
     width: 70%;
+    font-family: 'Roboto', sans-serif;
     /* border-style: solid;
     border-color: #000;
     border-width: 2px; */
@@ -393,6 +396,7 @@ html, body, h1, p {
   .research{
     width: 65%;
     padding-right: 10px;
+    font-family: 'Roboto', sans-serif;
     /* border-style: solid;
     border-color: #000;
     border-width: 2px; */
@@ -400,12 +404,14 @@ html, body, h1, p {
   .scores{
     width: 30%;
     padding-left: 15px;
+    font-family: 'Roboto', sans-serif;
     /* border-style: solid;
     border-color: #000;
     border-width: 2px; */
   }
   .workex{
     width: fit-content;
+    font-family: 'Roboto', sans-serif;
     /* border-style: solid;
     border-color: #000;
     border-width: 2px; */
@@ -413,11 +419,12 @@ html, body, h1, p {
   
   .extra-curricular{
     width: 80%;
+    font-family: 'Roboto', sans-serif;
   }
   h3 {
     color: #696D6E;
     font-family: Roboto;
-    font-size: 10px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 15px; /* 200% */
