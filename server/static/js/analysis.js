@@ -192,6 +192,11 @@ function display_values_box_two(data)
   const averageValue = (Object.values(schoolValues).reduce((acc, val) => acc + val, 0) / Object.values(schoolValues).length).toFixed(1);
   document.querySelector('.school-values .average').textContent = averageValue;
 }
+
+
+
+
+
 const options = {
     series: [
       {
