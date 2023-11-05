@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: #5a5a5a;
+    font-family: 'Roboto', sans-serif;
+}
+#container{
+    /* background-color: #e15959; */
+    height:96vh;
+    width: 99.5vw;
+    /* border-style: solid;
+    border-width: 2px;
+    border-color: #ef2121; */
+    background-color: #f9f9f9;
+    display: flex;
+}
+#left{
+    height:100%;
+    width: 18%;
+    background-color: white;
+    /* border-style: solid;
+    border-width: 2px;
+    border-color: #151414; */
+}
+#right{
+    margin-left: 1vw;
+    height: 100%;
+    width: 79%;
+    background-color: #f9f9f9;
+    /* border-style: solid;
+    border-width: 2px;
+    border-color: #151414; */
+}
+
+#right-body{
+    width: 100%;
+}
+
+#right-body-navbar{
+    height: 8%;
+    width: 100%;
+    display: flex;
+    /* border-style: solid;
+    border-width: 2px;
+    border-color: #f98282; */
+}
+#right-body-card-container{
+    width: 100%;
+    height: 575px;
+    overflow: auto;
+    /* overflow-y: scroll; */
+}
+#right-body-card-container::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+}
+.scrollable-div::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+}
+#students{
+    margin:10px;
+    padding-left: 10px;
+    width: 54%;
+    color: #5a5a5a;
+}
+
+#search-bar{
+    text-align: center;
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid transparent; 
+    border-radius: 5px;
+}
+
+/* #filter-batch{
+    text-align: center;
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid transparent; 
+    border-radius: 5px;
+    color: #636363;
+} */
+
+#filter-batch{
+    text-align: center;
+    margin: 10px;
+    width: 100px;
+    height: 33px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid transparent; 
+    border-radius: 5px;
+    color: #636363;
+}
+
+#logout{
+    text-align: center;
+    margin: 10px;
+    width: 20%;
+    height: 33px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #316CF5; 
+    border-radius: 5px;
+    background-color: #316CF5;
+    color: white;
+    /* padding: 10px; */
+}
+
+#right-body-filters{
+    display: flex;
+}
+
+.filter{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: fit-content;
+    height: 23px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    /* border-radius: 10px; */
+    border: 2px solid transparent; 
+    color: #5a5a5a;
+}
+.filter-active{
+    color: #316CF5;
+    text-decoration: underline;
+    font-weight: bold;
+}
+#card-header{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.column{
+    text-align: center;
+    margin-top: 10px;
+    width: 190px;
+    height: 23px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:5px;
+    /* background-color: #ffffff; */
+    border-radius: 10px;
+    /* border: 2px solid #141313; */
+    margin-right: 0px; 
+    /* display: flex; */
+
+}
+.id{
+    width: 100px;
+}
+
+.student-card{
+    /* margin-left:20px; */
+    margin-right:20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 98%;
+    height: 40px;
+    margin-top: 10px;
+    padding-top:15px;
+    /* border: 2px solid #141313; */
+    /* border: 2px inset #dadada;
+    border: 2px outset #dadada; */
+}
+
+.student{
+    text-align: center;
+    /* margin-top: 10px; */
+    width: 190px;
+    height: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:5px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    /* border: 2px solid #141313; */
+    margin-right: 0px; 
+    
+}
+.sid{
+    width: 60px;
+}
+.name{
+    width: 150px;
+}
+.email{
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+.date{
+    width: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+.status{
+    width: 80px;
+}
+.image{
+    display: flex;
+}
+.accepted{
+    background-color: #F4FDF9;
+    color: #5ADAA0;
+    height: 30px;
+    margin-top: -8px;
+    padding-top: 10px;
+    width: 80px;
+}
+
+.pending{
+    background-color: #FEFAF5;
+    color: #F5A157;
+    height: 30px;
+    margin-top: -8px;
+    padding-top: 10px;
+    width: 80px;
+}
+
+.rejected{
+    background-color: #FEF5F7;
+    color: #EA4E66;
+    height: 30px;
+    margin-top: -8px;
+    padding-top: 10px;
+    width: 80px;
+}
+
+#left-body{
+    width: 100%;
+}
+
+#left-header{
+    width: 50%;
+    padding-left: 20%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    /* margin: auto; */
+}
+
+.course-cards{
+    /* margin-top: 20px; */
+    width: 110%;
+    height: 100%;
+    /* padding-top: 10px; */
+    padding-left: 1.4vw;
+}
+
+.course-card {
+    width: 100%;
+    height: 102px;
+    background: #F9F9F9; 
+    border-radius: 13px;
+    margin-top: -10px;
+    margin-bottom: -10px    ;
+}
+
+.label {
+    width: 199px; 
+    height: 20px; 
+    color: #6E706F; 
+    font-size: 16px; 
+    font-family: "SF Pro Display-Bold", Helvetica;
+    font-weight: 700; 
+    line-height: 28px; 
+    letter-spacing: 0.35px; 
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+.degree{
+    width: 100%;
+    height: 17px;
+    color: #6E706F;
+    font-size: 12px;
+    font-family: SF Pro Display;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0.35px;
+    word-wrap: break-word;
+    margin-left: 20px;
+    display: flex; /* Add this property */
+    align-items: center; /* Add this property */
+    margin-left: 10px;
+    margin-top:-7px;
+}
+
+
+.side-line{
+    width: 36.83px; 
+    height: 0px; 
+    transform: rotate(90deg); 
+    transform-origin: 0 0; 
+    border: 1px #6E706F solid;
+    margin-left: 10px;
+  }
+
+
+  .sub-label {
+    width: 113px;
+    height: 17px;
+    color: #6E706F;
+    font-size: 10px;
+    font-family: SF Pro Display;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.35px;
+    word-wrap: break-word;
+    margin-left: 20px;
+    display: flex; /* Add this property */
+    align-items: center; /* Add this property */
+  }
+  
+
+  .sub-section{
+    height: 36.83px;
+    align-self: center;
+  }
+
+
+/* .active-card{
+    
+} */
+.course-card {
+    width: 80%;
+    height: 102px;
+    margin-bottom: 50px;
+    background: #F9F9F9; 
+    border-radius: 13px;
+    /* padding-left: 10px; */
+}
+
+.course-card.active-card{
+    width: 80% ;
+    height: 102px;
+    margin-bottom: 50px;
+    border-radius: 13px;
+    background: #316CF5; 
+  } 
+
+.label.active-card{
+    width: 199px; 
+    height: 20px; 
+    color: white; 
+    font-size: 16px; 
+    font-family: "SF Pro Display-Bold", Helvetica;
+    font-weight: 700; 
+    line-height: 28px; 
+    letter-spacing: 0.35px; 
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+.side-line.active-card{
+    width: 36.83px; 
+    height: 0px; 
+    transform: rotate(90deg); 
+    transform-origin: 0 0; 
+    border: 1px white solid;
+    margin-left: 10px;
+}
+
+
+.sub-label.active-card{
+    width: 100%;
+    height: 17px;
+    color: white;
+    font-size: 10px;
+    font-family: SF Pro Display;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.35px;
+    word-wrap: break-word;
+    margin-left: 20px;
+    display: flex; /* Add this property */
+    align-items: center; /* Add this property */
+}
+.degree.active-card{
+    width: 100%;
+    height: 17px;
+    color: white;
+    font-size: 12px;
+    font-family: SF Pro Display;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0.35px;
+    word-wrap: break-word;
+    margin-left: 10px;
+    display: flex; /* Add this property */
+    align-items: center; /* Add this property */
+    /* padding-bottom: 2px; */
+}
+
+.sub-section.active-card{
+    height: 36.83px;
+    align-self: center;
+}
