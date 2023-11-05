@@ -423,6 +423,11 @@ html, body, h1, p {
         background-color: #F9F9F9;
     }
   
+
+#chart {
+    width: 100%;
+    margin: 10px auto;
+    }
   /* Dhaval End */
 
 
