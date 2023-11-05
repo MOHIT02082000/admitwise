@@ -153,7 +153,7 @@ function display_profile_main(data){
         profileCard.querySelector('.bottom-column-profile-main-card .notes p').textContent = data.notes;
     }
 
-    var seekingInfo = 'Seeking - ' + data.keyStats.workexp ;
+    var seekingInfo = 'Seeking - ' + data.seeking ;
     profileCard.querySelector('.right-column-profile-main-card .seeking').textContent = seekingInfo;
 
 
