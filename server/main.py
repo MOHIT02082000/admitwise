@@ -47,7 +47,7 @@ def student_list_page():
 
 # returns data for the given course
 # to be completed
-@app.get("/students/{course}")
+@app.get("/students/list/{course}")
 def student_list_page(course):
     collection = db.cards
     document = collection.find({"course": "ms_cse"})
@@ -64,7 +64,18 @@ def student_list_page(course):
         data.append(formatted_doc)
     print(data)
     serialized_data = json.dumps(data)
+    return JSONResponse(content=data)
 
+
+@app.get("/student/data/{id}")
+def student_all_data(id):
+    collection = db.data
+    id = int(id)
+    document = collection.find_one({"id": id})
+    # document = list(document)
+    # print(document)
+    document.pop("_id", None)
+    serialized_data = json.dumps(document)
     return JSONResponse(content=serialized_data)
 
 @app.get("/add")
