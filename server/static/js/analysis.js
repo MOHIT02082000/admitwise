@@ -137,10 +137,10 @@ contentDisplay.addEventListener("scroll", function () {
 
 function display_profile_main(data){
 
-    var profileCard = document.querySelector('.profile-main-card');
+    var profileCard = document.querySelector('.profile-main-card ');
 
     // Set the name
-    profileCard.querySelector('.right-column-profile-main-card h2').textContent = data.name;
+    profileCard.querySelector('.right-column-profile-main-card .name').textContent = data.name;
 
     // Since the 'email' field remains the same, update it directly
     profileCard.querySelector('.right-column-profile-main-card .email').textContent = data.email;
@@ -170,33 +170,61 @@ function display_values_box_one(data)
   sliders[2].value = uniValues.val3; // Corresponds to "Safety"
   sliders[3].value = uniValues.val4; // Corresponds to "Integrity"
   
-  // Update slider backgrounds
-  sliders.forEach(slider => updateSlider(slider));
-
-  // Calculate and update average university value if there are more than one value
-  const averageValue = (Object.values(uniValues).reduce((acc, val) => acc + val, 0) / Object.values(uniValues).length).toFixed(1);
-  document.querySelector('.university-values .average').textContent = averageValue;
+  // Update slider backgrounds and average value initially
+  sliders.forEach(slider => {
+    updateSlider1(slider); // Update the slider's background
+  });
+  updateAverage1(); // Set the average value initially
 }
 
-function display_values_box_two(data)
-{
+
+function updateAverage1() {
+    const sliders = document.querySelectorAll('.university-values .slider');
+    const sum = Array.from(sliders).reduce((acc, slider) => acc + Number(slider.value), 0);
+    const average = (sum / sliders.length).toFixed(1); // To fix to one decimal place
+    document.querySelector('.university-values .average').textContent = average;
+  }
+
+  function updateSlider1(slider) {
+    const value = ((slider.value - slider.min) / (slider.max - slider.min)) * 100;
+    slider.style.background = `linear-gradient(to right, #FFD700 0%, #FFD700 ${value}%, #d3d3d3 ${value}%, #d3d3d3 100%)`;
+
+    updateAverage1(); // This should call updateAverage1 instead of updateAverage
+}
+
+
+
+function display_values_box_two(data) {
     const schoolValues = data.departmentValues;
   
-  // Assign values to sliders
-  const sliders = document.querySelectorAll('.school-values .slider');
-  sliders[0].value = schoolValues.val1; // Corresponds to "Inclusion"
-  sliders[1].value = schoolValues.val2; // Corresponds to "Learning"
-  sliders[2].value = schoolValues.val3; // Corresponds to "Safety"
-  sliders[3].value = schoolValues.val4; // Corresponds to "Integrity"
+    // Assign values to sliders
+    const sliders = document.querySelectorAll('.school-values .slider');
+    sliders[0].value = schoolValues.val1;
+    sliders[1].value = schoolValues.val2;
+    sliders[2].value = schoolValues.val3;
+    sliders[3].value = schoolValues.val4;
+    
+    // Update slider backgrounds and average value initially
+    sliders.forEach(slider => {
+      updateSlider(slider); // Update the slider's background
+    });
+    updateAverage(); // Set the average value initially
+  }
+
+
+function updateAverage() {
+    const sliders = document.querySelectorAll('.school-values .slider');
+    const sum = Array.from(sliders).reduce((acc, slider) => acc + Number(slider.value), 0);
+    const average = (sum / sliders.length).toFixed(1); // To fix to one decimal place
+    document.querySelector('.school-values .average').textContent = average;
+  }
+
+  function updateSlider(slider) {
+    const value = ((slider.value - slider.min) / (slider.max - slider.min)) * 100;
+    slider.style.background = `linear-gradient(to right, #FFD700 0%, #FFD700 ${value}%, #d3d3d3 ${value}%, #d3d3d3 100%)`;
   
-  // Update slider backgrounds
-  sliders.forEach(slider => updateSlider(slider));
-
-  // Calculate and update average university value if there are more than one value
-  const averageValue = (Object.values(schoolValues).reduce((acc, val) => acc + val, 0) / Object.values(schoolValues).length).toFixed(1);
-  document.querySelector('.school-values .average').textContent = averageValue;
-}
-
+    updateAverage(); // Call updateAverage to refresh the average display
+  }
 
 
 
