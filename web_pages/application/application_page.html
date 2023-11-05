@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+<<<<<<< HEAD
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">            
+=======
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+>>>>>>> 561b5e3aaff55c9c10b3c5e4f37a76de72a7fe9f
 </head>
 <body>
     <div id="container" class= "container">
@@ -45,16 +49,58 @@
                         </div>
                     </div>
 
-                    <!-- naman ends -->
                     
-                    <div class = "content-sub-card">
-                        <p> 1</p>
-                    </div>
                     
-                    <div class = "content-sub-card">
-                        <p> 1</p>
+                    <div class = "university-values">
+                        <div class="card">
+                            <div class="title">University Values</div>
+                            <div class="average">4.2</div>
+                            <div class="value">
+                              <div class="bar-text">Inclusion</div>
+                              <input type="range" min="1" max="5" value="4" class="slider" id="myRange1" oninput="updateSlider(this)">
+                            </div>
+                            <div class="value">
+                              <div class="bar-text">Learning</div>
+                              <input type="range" min="1" max="5" value="2" class="slider" id="myRange2" oninput="updateSlider(this)">
+                            </div>
+                            <div class="value">
+                              <div class="bar-text">Safety</div>
+                              <input type="range" min="1" max="5" value="4" class="slider" id="myRange3" oninput="updateSlider(this)">
+                            </div>
+                            <div class="value">
+                              <div class="bar-text">Integrity</div>
+                              <input type="range" min="1" max="5" value="2" class="slider" id="myRange4" oninput="updateSlider(this)">
+                            </div>
+                          </div>
                     </div>
 
+                    
+                    
+                    <div class = "school-values">
+                        
+                            <div class="card">
+                                <div class="title">School of Computer Science Values</div>
+                                <div class="average">4.2</div>
+                                <div class="value">
+                                  <div class="bar-text">Inclusion</div>
+                                  <input type="range" min="1" max="5" value="4" class="slider" id="myRange5" oninput="updateSlider(this)">
+                                </div>
+                                <div class="value">
+                                  <div class="bar-text">Learning</div>
+                                  <input type="range" min="1" max="5" value="2" class="slider" id="myRange6" oninput="updateSlider(this)">
+                                </div>
+                                <div class="value">
+                                  <div class="bar-text">Safety</div>
+                                  <input type="range" min="1" max="5" value="4" class="slider" id="myRange7" oninput="updateSlider(this)">
+                                </div>
+                                <div class="value">
+                                  <div class="bar-text">Integrity</div>
+                                  <input type="range" min="1" max="5" value="2" class="slider" id="myRange8" oninput="updateSlider(this)">
+                                </div>
+                              </div>
+                        
+                    </div>
+                <!-- naman ends -->
                 </div>
         </div>
 
@@ -148,5 +194,25 @@
         </div>
     </div>
 
+
+
+    <script>
+        function updateSlider(slider) {
+          const value = ((slider.value - slider.min) / (slider.max - slider.min)) * 100;
+          slider.style.background = `linear-gradient(to right, #FFD700 0%, #FFD700 ${value}%, #d3d3d3 ${value}%, #d3d3d3 100%)`;
+        }
+        
+       
+        updateSlider(document.getElementById('myRange1'));
+        updateSlider(document.getElementById('myRange2'));
+        updateSlider(document.getElementById('myRange3'));
+        updateSlider(document.getElementById('myRange4'));
+                
+        updateSlider(document.getElementById('myRange5'));
+        updateSlider(document.getElementById('myRange6'));
+        updateSlider(document.getElementById('myRange7'));
+        updateSlider(document.getElementById('myRange8'));
+    </script>
 </body>
+
 </html>
