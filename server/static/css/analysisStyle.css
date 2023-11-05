@@ -153,10 +153,9 @@ html, body, h1, p {
   }
 
   .average {
-    text-align: right;
-    font-size: 10px;
-    color: #333;
-    
+    font-size: 2em; /* Larger font size for the average value */
+    font-weight: bold;
+    font-family: "Roboto";
   }
 
   .bar-container {
@@ -220,8 +219,10 @@ html, body, h1, p {
   cursor: pointer;
 }
 
-.sidebyside{
-
+.sidebyside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -360,11 +361,15 @@ html, body, h1, p {
     color: white;
   }
 
-
+.name{
+  font-family: "Roboto";
+  font-size: 19px;
+  font-weight: bold;
+}
 
   h2 {
     color: #414D55;
-    font-family: "Poppins-Medium";
+    font-family: "Roboto";
     font-size: 14px;
     font-style: normal;
     font-weight: 700;

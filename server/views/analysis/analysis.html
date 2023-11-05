@@ -32,7 +32,7 @@
                                 <img src="/static/images/profile_pic.png" alt="Naman Khurpia">
                             </div>
                             <div class="right-column-profile-main-card">
-                                <h2>Naman Khurpiaa</h2>
+                                <p class="name">Student Name</p>
                                 <p class="seeking">Seeking - M.Sc Computer Science + Data Science</p>
                                 <p class="applicationdate">Application Received - 12/04/2023</p>
                                 <p class="email">namankhurpia2@gmail.com</p>
@@ -56,23 +56,23 @@
                         <div class="card">
                             <div class="sidebyside">
                                 <div class="title">Overall Evaluation</div>
-                                <div class="average">4.2</div>
+                                <div class="average">4.9</div>
                             </div>
                             <div class="value">
                               <div class="bar-text">Academic Record</div>
-                              <input type="range" min="1" max="5" value="4" class="slider" id="myRange1" oninput="updateSlider(this)">
+                              <input type="range" min="1" max="5" value="4" class="slider" id="myRange1" oninput="updateSlider1(this)">
                             </div>
                             <div class="value">
                               <div class="bar-text">Statement of Purpose</div>
-                              <input type="range" min="1" max="5" value="2" class="slider" id="myRange2" oninput="updateSlider(this)">
+                              <input type="range" min="1" max="5" value="2" class="slider" id="myRange2" oninput="updateSlider1(this)">
                             </div>
                             <div class="value">
                               <div class="bar-text">Letters of Recommendation</div>
-                              <input type="range" min="1" max="5" value="4" class="slider" id="myRange3" oninput="updateSlider(this)">
+                              <input type="range" min="1" max="5" value="4" class="slider" id="myRange3" oninput="updateSlider1(this)">
                             </div>
                             <div class="value">
                               <div class="bar-text">Diversity</div>
-                              <input type="range" min="1" max="5" value="2" class="slider" id="myRange4" oninput="updateSlider(this)">
+                              <input type="range" min="1" max="5" value="2" class="slider" id="myRange4" oninput="updateSlider1(this)">
                             </div>
                           </div>
                     </div>
@@ -82,8 +82,10 @@
                     <div class = "school-values">
                         
                             <div class="card">
-                                <div class="title">School of Computer Science Evaluation</div>
-                                <div class="average">4.2</div>
+                              <div class="sidebyside">
+                                <div class="title">School of Computer Science<br> Evaluation</div>
+                                <div class="average">3.8</div>
+                              </div>
                                 <div class="value">
                                   <div class="bar-text">Research Potential</div>
                                   <input type="range" min="1" max="5" value="4" class="slider" id="myRange5" oninput="updateSlider(this)">
@@ -200,24 +202,7 @@
     </div>
     
     </div>
-    <script>
-        function updateSlider(slider) {
-          const value = ((slider.value - slider.min) / (slider.max - slider.min)) * 100;
-          slider.style.background = `linear-gradient(to right, #FFD700 0%, #FFD700 ${value}%, #d3d3d3 ${value}%, #d3d3d3 100%)`;
-        }
-        
-       
-        updateSlider(document.getElementById('myRange1'));
-        updateSlider(document.getElementById('myRange2'));
-        updateSlider(document.getElementById('myRange3'));
-        updateSlider(document.getElementById('myRange4'));
-                
-        updateSlider(document.getElementById('myRange5'));
-        updateSlider(document.getElementById('myRange6'));
-        updateSlider(document.getElementById('myRange7'));
-        updateSlider(document.getElementById('myRange8'));
 
-    </script>
 </body>
 
 </html>
