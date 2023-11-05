@@ -251,13 +251,6 @@ html, body, h1, p {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#right-body-bottom {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    margin-top: 10px;
-}
 
 #right-body-top-left {
     flex: 1;
@@ -280,6 +273,7 @@ html, body, h1, p {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #F9F9F9;
 }
 
 #bottom-section{
@@ -287,6 +281,7 @@ html, body, h1, p {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #F9F9F9;
 }
 
 #bottom-section-buttons {
@@ -308,31 +303,50 @@ html, body, h1, p {
 
 }
 
-.rectangle {
-    width: 49px;
-    height: 16px;
-    top: 0;
-    left: 0;
-    background-color: #f4f8fa;
-    border-radius: 8px;
-    border: 1px solid;
-    border-color: #316cf5;
-    display: inline-block; /* Display as inline-block to make them side by side */
-    margin-right: 10px; /* Add spacing between the buttons */
-}
-
-.XXL {
-    font-family: "Poppins-Medium", Helvetica;
-    font-weight: 500;
+.file-section {
+    background: #f4f8fa;
+    border-radius: 10px; /* Reduced border radius */
+    padding: 10px; /* Reduced padding */
+    box-sizing: border-box;
+    width: max-content;
+    margin: auto;
+  }
+  
+  .file-section-header {
+    font-size: 14px; /* Reduced font size */
+    color: #414d55;
+    margin-bottom: 5px; /* Reduced margin */
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+  
+  .file-buttons {
+    display: flex;
+    gap: 5px; /* Reduced gap between buttons */
+  }
+  
+  .file-btn {
+    background: none;
     color: #316cf5;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 0.5px;
-    line-height: normal;
-    padding: auto;
-    display: inline-block; /* Display as inline-block to make them side by side */
-}
-
+    border: 1px solid #316cf5; /* Reduced border width */
+    border-radius: 10px; /* Reduced border radius */
+    padding: 5px 10px; /* Reduced padding */
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px; /* Reduced font size */
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .file-btn:hover {
+    background: #316cf5;
+    color: white;
+  }
+  
+  .file-btn.active {
+    background: #316cf5;
+    color: white;
+  }
 
 
 
@@ -353,7 +367,7 @@ html, body, h1, p {
   }
   
   .scores{
-    width: 30%;
+    width: 50%;
   }
   
   .achievements, .extra-curricular {
@@ -372,8 +386,9 @@ html, body, h1, p {
   }
   
   p {
-    font-size: 10px;
+    font-size: 14px;
     margin-bottom: 5px;
+    font-family: SF Pro Display;
   }
   
   .dot {
@@ -386,4 +401,29 @@ html, body, h1, p {
     position: relative;
     top: 1px;
   }
+
+  .section-header {
+    color: #000;
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 175% */
+    letter-spacing: -0.15px;
+    text-align: center;
+    }
+
+
+    #right-body-bottom {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        flex: 1;
+        padding: 10px;
+        background-color: #F9F9F9;
+    }
+  
   /* Dhaval End */
+
+
+  
