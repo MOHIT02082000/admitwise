@@ -47,6 +47,10 @@ document.addEventListener("DOMContentLoaded", function () {
         
         filesDisplay(files);
 
+        display_profile_main(data);
+        display_values_box_one(data);
+        display_values_box_two(data);
+
 
         // window.alert(name + email +date +notes +uni_values);
     })
@@ -124,3 +128,66 @@ content.addEventListener("scroll", function () {
     }
 });
 
+
+
+function display_profile_main(data){
+
+    var profileCard = document.querySelector('.profile-main-card');
+
+    // Set the name
+    profileCard.querySelector('.right-column-profile-main-card h2').textContent = data.name;
+
+    // Since the 'email' field remains the same, update it directly
+    profileCard.querySelector('.right-column-profile-main-card .email').textContent = data.email;
+
+    // Set the 'application date' text
+    profileCard.querySelector('.right-column-profile-main-card .applicationdate').textContent = 'Application Received - ' + data.date;
+
+    // Set the notes content if there are notes available in the data
+    if(data.notes) {
+        profileCard.querySelector('.bottom-column-profile-main-card .notes p').textContent = data.notes;
+    }
+
+    var seekingInfo = 'Seeking - ' + data.keyStats.workexp ;
+    profileCard.querySelector('.right-column-profile-main-card .seeking').textContent = seekingInfo;
+
+
+}
+
+function display_values_box_one(data)
+{
+    const uniValues = data.uniValues;
+  
+  // Assign values to sliders
+  const sliders = document.querySelectorAll('.university-values .slider');
+  sliders[0].value = uniValues.val1; // Corresponds to "Inclusion"
+  sliders[1].value = uniValues.val2; // Corresponds to "Learning"
+  sliders[2].value = uniValues.val3; // Corresponds to "Safety"
+  sliders[3].value = uniValues.val4; // Corresponds to "Integrity"
+  
+  // Update slider backgrounds
+  sliders.forEach(slider => updateSlider(slider));
+
+  // Calculate and update average university value if there are more than one value
+  const averageValue = (Object.values(uniValues).reduce((acc, val) => acc + val, 0) / Object.values(uniValues).length).toFixed(1);
+  document.querySelector('.university-values .average').textContent = averageValue;
+}
+
+function display_values_box_two(data)
+{
+    const schoolValues = data.departmentValues;
+  
+  // Assign values to sliders
+  const sliders = document.querySelectorAll('.school-values .slider');
+  sliders[0].value = schoolValues.val1; // Corresponds to "Inclusion"
+  sliders[1].value = schoolValues.val2; // Corresponds to "Learning"
+  sliders[2].value = schoolValues.val3; // Corresponds to "Safety"
+  sliders[3].value = schoolValues.val4; // Corresponds to "Integrity"
+  
+  // Update slider backgrounds
+  sliders.forEach(slider => updateSlider(slider));
+
+  // Calculate and update average university value if there are more than one value
+  const averageValue = (Object.values(schoolValues).reduce((acc, val) => acc + val, 0) / Object.values(schoolValues).length).toFixed(1);
+  document.querySelector('.school-values .average').textContent = averageValue;
+}
