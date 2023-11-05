@@ -56,10 +56,13 @@ document.addEventListener("DOMContentLoaded", function () {
             emailLogo.src = "/static/images/email_logo.svg";
             emailLogo.alt = "email logo";
             emailLogo.style.marginRight = "10px";
+            emailLogo.style.paddingLeft = "30px";
         
             // Create the inner <div> for the email address
             const emailDiv = document.createElement("div");
             emailDiv.textContent = jsonObject.email;
+
+            // emailDiv.style.textAlign = "left";
             email.appendChild(emailLogo);
             email.appendChild(emailDiv);
 
@@ -97,6 +100,9 @@ document.addEventListener("DOMContentLoaded", function () {
             card.appendChild(email);
             card.appendChild(date);
             card.appendChild(state);
+            card.addEventListener("click", function () {
+                fetchProfile(jsonObject.id);
+            });
             parent.appendChild(card);
         });
         // Handle the JSON data received from the API
@@ -106,3 +112,10 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("Fetch error:", error);
     });
 });
+
+function fetchProfile(id){
+
+    localStorage.setItem("admit_wise_id", id);   
+    const apiUrl = "http://127.0.0.1:3010/analysis"; 
+    window.location.href = apiUrl
+}
