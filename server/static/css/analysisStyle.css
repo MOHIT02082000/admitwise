@@ -430,6 +430,8 @@ html, body, h1, p {
     line-height: 28px; /* 175% */
     letter-spacing: -0.15px;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
     }
 
   
@@ -442,6 +444,7 @@ html, body, h1, p {
       margin-bottom: 20px;
       padding: 10px;
       background-color: #F9F9F9;
+      min-height: 500px;
   }
   
 
@@ -451,15 +454,14 @@ html, body, h1, p {
     }
 
 
-    .right-body-bottom-content {
-        max-height: 270px;
-        overflow: hiddent;
-    }
-    
+    .content-display {
+      overflow-y: hidden;
+      min-height: 500px;
+  }
     
     .content-scrollable {
-        max-height: 270px;
-        overflow-y: auto;
+        overflow-y: hidden;
+        min-height: 500px;
     }
 
     .footer {
