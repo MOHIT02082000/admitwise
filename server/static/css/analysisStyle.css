@@ -374,27 +374,38 @@ html, body, h1, p {
   
   .statistics {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    /* justify-content: space-between; */
+    /* margin-bottom: 20px; */
+    /* align-items: left; */
   }
   
   .education {
-    width: 65%;
+    width: 70%;
+    /* border-style: solid;
+    border-color: #000;
+    border-width: 2px; */
   }
   .research{
     width: 65%;
     padding-right: 10px;
+    /* border-style: solid;
+    border-color: #000;
+    border-width: 2px; */
   }
   .scores{
-    width: 70%;
+    width: 30%;
     padding-left: 15px;
+    /* border-style: solid;
+    border-color: #000;
+    border-width: 2px; */
   }
   .workex{
-    width: 100%;
+    width: fit-content;
+    /* border-style: solid;
+    border-color: #000;
+    border-width: 2px; */
   }
-  .achievements {
-    width: 65%;
-  }
+  
   .extra-curricular{
     width: 80%;
   }
@@ -487,4 +498,54 @@ html, body, h1, p {
   /* Dhaval End */
 
 
+  .blue-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: -5px;
+  }
   
+  .blue-list li::before {
+    content: "●"; /* Unicode character for a bullet (•) */
+    color: #316CF5;   /* The desired bullet color */
+    margin-right: 5px;
+    font-size: 1.2em;
+  }
+
+  .red-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: -5px;
+  }
+  
+  .red-list li::before {
+    content: "●"; /* Unicode character for a bullet (•) */
+    color: #FF715B;   /* The desired bullet color */
+    margin-right: 5px;
+    font-size: 1.2em;
+  }
+
+  .green-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: -5px;
+  }
+  
+  .green-list li::before {
+    content: "●"; /* Unicode character for a bullet (•) */
+    color: #04E762;   /* The desired bullet color */
+    margin-right: 5px;
+    font-size: 1.2em;
+  }
+
+  .yellow-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: -5px;
+  }
+  
+  .yellow-list li::before {
+    content: "●"; /* Unicode character for a bullet (•) */
+    color: #FFD15B;   /* The desired bullet color */
+    margin-right: 5px;
+    font-size: 1.2em;
+  }

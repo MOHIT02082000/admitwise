@@ -68,6 +68,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function update_key_stats(key_stats){
     // update education
+    const dotSpan = document.createElement("span");
+    dotSpan.className = "dot";
+    dotSpan.style.backgroundColor = "#316CF5";
+
     document.getElementById("degree").textContent = key_stats.education.degree;
     document.getElementById("univeristy").textContent = key_stats.education.univeristy;
     document.getElementById("GPA").textContent = key_stats.education.GPA;
@@ -93,7 +97,7 @@ function update_key_stats(key_stats){
 function update_key_stats(key_stats){
     // update education
     document.getElementById("degree").textContent = key_stats.education.degree;
-    document.getElementById("univeristy").textContent = key_stats.education.univeristy;
+    document.getElementById("university").textContent = key_stats.education.university;
     document.getElementById("GPA").textContent = key_stats.education.GPA;
     document.getElementById("tier").textContent = key_stats.education.tier;
 
@@ -109,9 +113,9 @@ function update_key_stats(key_stats){
     document.getElementById("duration2").textContent = key_stats.workexp.duration2;
     
     // update scores
-    document.getElementById("score1").textContent = key_stats.scores.score1;
-    document.getElementById("score2").textContent = key_stats.scores.score2;
-    document.getElementById("score3").textContent = key_stats.scores.score3;
+    document.getElementById("score1").textContent = key_stats.scores.GRE;
+    document.getElementById("score2").textContent = key_stats.scores.TOEFL;
+    document.getElementById("score3").textContent = key_stats.scores.IELTS;
 }
 
 
