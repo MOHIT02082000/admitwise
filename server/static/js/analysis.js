@@ -79,7 +79,7 @@ function displayContent(buttonId, sopData, pdfUrls) {
 
     } else if (pdfUrls.hasOwnProperty(buttonId)) {
         contentHeader.innerHTML = buttonId.toUpperCase();
-        contentDisplay.innerHTML = `<iframe src="${pdfUrls[buttonId]}" width="100%" height="600"></iframe>`; // Display PDF
+        contentDisplay.innerHTML = `<iframe src="${pdfUrls[buttonId]}" width="100%" height="800"></iframe>`; // Display PDF
     }
 }
 
@@ -116,23 +116,6 @@ function displayFiles(files) {
     // Initially display SOP data
     displayContent("sop", sopData, pdfUrls);
 }
-
-
-const rightBodyBottom = document.getElementById("right-body-bottom");
-const contentDisplay = document.getElementById("content-display");
-
-contentDisplay.addEventListener("scroll", function () {
-    // Get the scroll height and client height of the content
-    const scrollHeight = contentDisplay.scrollHeight;
-    const clientHeight = contentDisplay.clientHeight;
-
-    if (scrollHeight > clientHeight) {
-        rightBodyBottom.style.height = scrollHeight + "px"; // Expand the div
-    } else {
-        rightBodyBottom.style.height = "auto"; // Return to the original state
-    }
-});
-
 
 
 function display_profile_main(data){
