@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts/dist/apexcharts.css">
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="/static/js/analysis.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 </head>
 <body>
@@ -43,9 +45,9 @@
                                 <p>Wore these with my training tee and pods to a graduation bbq and the young bucks was all over it. Love the look and feel.</p>
                             </div>
                             <div class="buttons">
-                                <button type="button">Accept</button>
-                                <button type="button">Reject</button>
-                                <button type="button">Waitlist</button>
+                                <button type="button" onclick="acceptProfile()" >Accept</button>
+                                <button type="button" onclick="rejectProfile()">Reject</button>
+                                <button type="button" onclick="waitlistProfile()">Waitlist</button>
                             </div>
                         </div>
                     </div>

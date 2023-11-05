@@ -337,3 +337,37 @@ function initChart() {
 //     console.log(undergradscores.Algorithms);
 
 // }
+
+
+
+
+function acceptProfile() {
+    // Handle the logic for accepting the profile here
+    // You can use the data in the profile to perform actions.
+    console.log("Profile accepted");
+    Swal.fire(
+        'Good job!',
+        'Your acceptance has been saved!',
+        'success'
+      )
+}
+
+function rejectProfile() {
+    // Handle the logic for rejecting the profile here
+    // You can use the data in the profile to perform actions.
+    Swal.fire(
+        'Good job!',
+        'Your rejection has been saved!',
+        'success'
+      )
+}
+
+function waitlistProfile() {
+    // Handle the logic for waitlisting the profile here
+    // You can use the data in the profile to perform actions.
+    Swal.fire(
+        'Waitlisted!',
+        'Profile added to waitlist!',
+        'warning'
+      )
+}
