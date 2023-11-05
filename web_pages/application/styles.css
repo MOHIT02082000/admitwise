@@ -43,7 +43,7 @@ html, body, h1, p {
 
 .profile-main-card {
     background-color: #F9F9F9;
-    width: 600px;
+    width: 400px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
@@ -51,14 +51,25 @@ html, body, h1, p {
     font-family: 'Roboto', sans-serif;
 }
 
+.university-values{
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 480px;
+    height: 192px;
+    
+}
 
-.content-main-card{
-    border: 1px solid #ccc;
+
+
+.school-values{
+    border-radius: 8px;
     margin-bottom: 10px;
     padding: 10px;
     /* width: 480px; */
     /* height: 288px; */
 }
+
 
 .content-sub-card {
     border: 1px solid #ccc;
@@ -120,8 +131,94 @@ html, body, h1, p {
 
 
 
+.card {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    
+    
+  }
 
-/* nama ends*/
+  .title{
+    font-size: 14px; /* Reduced font size */
+    color: #414d55;
+    margin-bottom: 5px; /* Reduced margin */
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+
+  .average {
+    text-align: right;
+    font-size: 10px;
+    color: #333;
+    
+  }
+
+  .bar-container {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+  }
+
+  .bar {
+    height: 20px;
+    border-radius: 10px;
+    background-color: #FFD700;
+    width: 0%;
+    transition: width 0.5s;
+  }
+
+  
+  .bar-text {
+    padding: 0 5px;
+    color: #696D6E;
+    font-size: 14px;
+    font-family: 'Roboto Light', sans-serif;
+  }
+
+  .slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to right, #FFD700 0%, #FFD700 50%, #d3d3d3 50%, #d3d3d3 100%);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #FFD700;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #FFD700;
+  cursor: pointer;
+}
+
+
+
+
+/* naman ends*/
 
 /* Dhaval Start */
 /* Right section */
