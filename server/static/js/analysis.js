@@ -132,9 +132,10 @@ function displayContent(buttonId, sopData, pdfUrls) {
 
     } else if (pdfUrls.hasOwnProperty(buttonId)) {
         contentHeader.innerHTML = buttonId.toUpperCase();
-        contentDisplay.innerHTML = `<iframe src="${pdfUrls[buttonId]}" width="100%" height="800"></iframe>`; // Display PDF
+        contentDisplay.innerHTML = `<iframe src="${pdfUrls[buttonId]}" style="min-height: 600px; height: 600px; width: 100%;"></iframe>`; // Display PDF with a minimum and fixed height
     }
 }
+
 
 function displayFiles(files) {
     let sopData = files.sop;
