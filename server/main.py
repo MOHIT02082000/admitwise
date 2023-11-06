@@ -10,7 +10,7 @@ from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 
 
-uri = "mongodb+srv://kashyapsoni3010:kashyapsoni3010@cluster0.ba1iivd.mongodb.net/?retryWrites=true&w=majority"
+uri = ""
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))
 db = client.admitwise
