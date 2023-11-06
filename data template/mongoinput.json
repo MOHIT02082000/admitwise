@@ -1,0 +1,192 @@
+data_to_insert_naman = {
+  "id":30124521,
+  "name":"Naman Khurpia",
+  "email":"namankhurpia2@gmail.com",
+  "date":"12/03/2023",
+  "notes":"Good candidate, can be considered for Acceptance, Has good work experience and graduated from reputed university",
+  "uniValues":{
+    "val1":4,
+    "val2":3,
+    "val3":5,
+    "val4":4
+  },
+  "departmentValues":{
+    "val1":5,
+    "val2":4,
+    "val3":3,
+    "val4":4
+  },
+  "keyStats":{
+    "workexp":" 2 years at Tata Consultancy Services",
+    "university" : "Vellore Institute of Technology",
+    "GPA":"8.5 / 10.0",
+    "GRE":"318 / 340",
+    "IELTS":"7.5 / 9.0",
+    "achievement1": "Special Achievement Award by TCS – Employee of week during award Sprint. (Score: 0.5106)",
+    "achievement2":"Mentor at Grace Hopper Conference 2023",
+    "achievement3":"3rd Prize Winner at App Challenge – tech fest of VIT, Launched an ecommerce app in less than 12 hrs"
+  },
+  "undergradscores":{
+    "Algorithms":"[98,87,56,98]",
+    "Computer Science":"[48,97,76,88]",
+    "Operating System":"[32,55,88,56]",
+    "GPA Overall": "[89,58,78,93]"
+  },
+  "files":{
+    "resume":"link",
+    "sop":"<p><span style=\"background-color: yellow;\">Adam Koehler Statement of Purpose After taking a multitude of computer science courses over my academic career I have perceived that most of the courses tend to build a student’s knowledge of computer science outward, broadening familiarity over several areas of computer science rather than creating a concentrated depth of knowledge in any one topic.</span> <span style=\"background-color: yellow;\">Pursuing a master’s degree in computer science will allow me to more fully develop my knowledge in two areas of particular interest to me: artificial intelligence and computer graphics.</span> <span style=\"background-color: yellow;\">By studying these areas in depth, I hope to resolve the disparity between having a wide scope of computer science knowledge and having a more concentrated understanding of a single computer science field.</span> Artificial intelligence is the foremost area of interest that I wish study further. <span style=\"background-color: yellow;\">The attraction of artificial intelligence for me lies in its breadth of applicability, both as a method of problem solving in itself and in a symbiotic integration with other areas of computer science.</span> A broad spectrum of applications exist within the artificial intelligence field, ranging from intelligent non-player controlled characters in computer game software to a ubiquitous computing solution that intelligently reacts to a variety of users. This diversity is one of the main reasons that I feel compelled to pursue artificial intelligence further. While I have striven to develop my understanding of artificial intelligence during my undergraduate education, the choreographed requirements of a bachelor's degree have restricted my research to only a minute sample of artificial intelligence’s applications. During my exposure to the field, I have often been unsatisfied with the level of interaction artificial intelligence displays in response to prompts of varying complexity. <span style=\"background-color: yellow;\">I do not believe the field has been developed to its potential in any regard, and feel that considerable progress can be made to improve the interactive experience that users have with an artificial intelligence application.</span> <span style=\"background-color: yellow;\">This genuine intrigue combined with my curiosity for the subject matter and the limitless potential of the field are the reason why I wish to pursue a greater depth of knowledge in artificial intelligence.</span> Through the education gained in pursuit of a master’s degree, I hope to be able to enrich the authenticity of many artificial intelligence experiences, from computer games, to interactive toys and beyond. While artificial intelligence holds the most intrigue for me, a secondary area of interest is computer graphics. Akin to artificial intelligence in that I have only touched on the subject during my undergraduate career, I hope to explore the areas of two and three dimensional rendering more acutely. <span style=\"background-color: yellow;\">While I have always enjoyed the freedom of creative expression, and embrace its value in many aspects of problem solving in computer science, the rigidity of programming has precluded my pursuit of many artistic interests.</span> I feel that a more in-depth review of the field of computer graphics would be very fulfilling for me, both for its creative liberties and for its application to other areas of computer science. Specifically with regard to my interest in artificial intelligence, I envision graphics applications such as an artificially intelligent avatar, with body and facial expressions that can create more engaging interaction between two users. It is also important to understand just how quickly the field of computer graphics is changing within computer science. I believe that a deeper appreciation for the state-of-the-art in computer graphics will only help me in all future computer science pursuits, and I look forward to the new challenges while pursuing my master’s degree in computer science. My undergraduate education has prepared me for the depth and commitment required of graduate research in the field of computer science. Two projects I have participated in would be research with the Embedded XINU team, and a senior design project also involving the XINU operating system. While participating on the Embedded XINU team I have chosen to aid in the research and development of an external analysis tool for embedded systems development. <span style=\"background-color: yellow;\">Personally, I have researched integrating the front end system with the debugging system, developed by another team member, via an open source debugging software.</span> <span style=\"background-color: yellow;\">Once complete, it will allow users to access many debugging features, such as single stepping through code, breaking at a certain point in the code, and continuing the execution of the code from the breakpoint.</span> <span style=\"background-color: yellow;\">The senior design project involves the creation of a software program to allow users building a XINU operating system to directly use computers with a Windows operating system installed.</span> Currently, a direct or remote connection to a UNIX variant needs to be used to aid development. Both projects have allowed me to see the considerable amount of work and research that goes into software development projects. Each of the projects is team oriented; with tasks split down so that one or more researchers can contribute. The groups function with relative autonomy, without daily guidance of a professor, although guidance is provided on a semi-periodic basis. Overall, these projects have provided useful experiences allowing me to understand both graduate and undergraduate level research and implementation. <span style=\"background-color: yellow;\">In addition to these two XINU based projects, I have also completed several course-based projects that assimilate the entire semester's work into a cohesive project.</span> One such project was a language interpreter written in Scheme that interprets primitive operations including add, subtract, Boolean not, and, or, and xor; as well as complex statements such as variable assignment, print statements, procedure declarations and calls and simple type checking. This and several other projects have helped me develop a wealth of knowledge in the computer science field, and have certainly broadened my interests. <span style=\"background-color: yellow;\">However, they have lacked depth in certain areas that I feel truly drawn to exploring.</span> Through graduate studies I hope to explore the fields of artificial intelligence and computer graphics more fully, and negotiate the requirements of intertwining the two more seamlessly than today's efforts produce. My ultimate goal is to produce meaningful work that combines the acquired in-depth knowledge of both the artificial intelligence field and the computer graphics field, while building on the solid foundation I have created in my undergraduate pursuits. </p>",
+    "transcript":"https://namankhurpia.pythonanywhere.com/media/catonefiles/consolidated.pdf",
+    "lor1":"https://namankhurpia.pythonanywhere.com/media/catonefiles/Letter_of_Recommendation_-_koushik_dutta.pdf",
+    "lor2":"https://namankhurpia.pythonanywhere.com/media/catonefiles/Letter_of_Recommendation_-_koushik_dutta.pdf",
+    "lor3":"https://namankhurpia.pythonanywhere.com/media/catonefiles/Letter_of_Recommendation_-_koushik_dutta.pdf",
+  "gre":"https://namankhurpia.pythonanywhere.com/media/catonefiles/cao_b2.pdf",
+    "ielts":"https://namankhurpia.pythonanywhere.com/media/catonefiles/cao_b2.pdf"
+  }
+
+}
+
+
+data_to_insert_dhaval = {
+  "id":30124521,
+  "name":"Dhaval Patel",
+  "email":"dhavaljpatel@gmail.com",
+  "date":"14/02/2023",
+  "notes":"Good candidate, can be considered for Acceptance, Has good work experience and graduated from reputed university",
+  "uniValues":{
+    "val1":5,
+    "val2":3,
+    "val3":3,
+    "val4":2
+  },
+  "departmentValues":{
+    "val1":2,
+    "val2":5,
+    "val3":4,
+    "val4":3
+  },
+  "keyStats":{
+    "workexp":" 5 years at Colgate",
+    "university" : "University of Mumbai",
+    "GPA":"9.0 / 10.0",
+    "GRE":"323 / 340",
+    "IELTS":"8.0 / 9.0",
+    "achievement1": "Best Employee Award by Colgate for 6 months",
+    "achievement2":"3rd prize winner at MLH Hack held at NIT Roorkee",
+    "achievement3":"3rd Prize Winner at Web Challenge – tech fest of NIT"
+  },
+  "undergradscores":{
+    "Algorithms":"[48,57,96,88]",
+    "Computer Science":"[48,67,96,88]",
+    "Operating System":"[32,35,28,56]",
+    "GPA Overall": "[99,28,38,93]"
+  },
+  "files":{
+    "resume":"link",
+    "sop":"<p><span style=\"background-color: yellow;\">Statement of Purpose\n\nSiddharth Sharma\n\nOctober 26, 2018\n\nWhen I think about the different realms of science and technology, it is hard to think of a domain that is going to change the world as much as advanced software will, in the decades ahead.</span> <span style=\"background-color: yellow;\">If Ray Kurzweil is right in his book “Singularity is Near”, we are near the end of ‘Epoch 4’ (Technology) and entering into ‘Epoch 5’ (The Merger of Human Technology with Human Intelligence).</span> <span style=\"background-color: yellow;\">In the distant future, as Ray points out in his book - advanced technology will enable us to have an artificial heart, knees, and almost any other part of the human body.</span> Paralysis due to spinal injuries could be overcome by using specialized electronics that would allow paraplegics to regain control over their muscles. While Ray’s ideas are interesting and exciting to think about, in the near future I foresee computer science being used as a tool, as mathematics is used, for all the fields of science. It has always been important for physicists, chemists and biologists to have some understanding of specific areas of mathematics to express their ideas, to write down formulas, and to make predictions. <span style=\"background-color: yellow;\">Similarly, in the near future, computer software will become an integral part of the research to create new breakthroughs.</span> For instance, all fields of science collect and analyze a large amount of data. <span style=\"background-color: yellow;\">Finding patterns in large amounts of data has always been a stumbling block.</span> However, by using state of the art software for data mining and machine learning, hidden trends and patterns may emerge that can help increase understanding and solve problems. Similarly, with the vast amounts of data in genomics, we can use various data mining techniques to find patterns that advance our understanding of how the human body functions, including understanding some of the brain’s intricacies. These patterns could also help with disease diagnosis and possible cures. I feel excited about what Ray describes as ‘Epoch 5’ where the focus shifts toward merging technology with human intelligence to create an age of Artificial Intelligence. I want to contribute to that age of evolution. Thus, a M.S. <span style=\"background-color: yellow;\">degree in Computer Science (with emphasis on Artificial Intelligence) is the logical culmination of my passion for Artificial Intelligence and Computer Science in general.</span> I earned my undergraduate degree in Computer Science [Elective - Artificial Intelligence] at the University of Pune with the grade ‘First Class with Distinction’. Also, I was the topper of the undergraduate program at my school. Prior to my undergraduate degree, I have been the topper in Mathematics and Computer Science at my high school. In 2007, I received the ‘Best Student’ award for the highest achievement in academics and for my contributions to the school. <span style=\"background-color: yellow;\">During my first year in the undergraduate program, I co-founded the Association of Computer Engineering Students (ACE) at my college, and I headed the organization during my junior and senior years in the positions of The General Secretary.</span> <span style=\"background-color: yellow;\">Also in my senior year, I was the President of ‘Digital Renaissance’, the technical festival organized by the CS department.</span> It holds the record for the highest number of participants and sponsors in the history of the college. Over the course of my undergraduate program, I participated in various programming contests and won many of them. I always enjoyed the practical aspects of my studies, and that is one of the reasons why my marks in lab exercises, term work, oral examinations, practical examinations, and projects averaged above 85%, the highest in my school. I also developed various small software tools for my school, such as a web-based system to conduct online examinations, an online course repository, and a small lightweight console for remote manageability of desktops. 1 During the final year of my undergraduate degree, I received an internship opportunity at BMC Software, to work on their Marimba products, the product written by the creators of the Java language (Arthur van Hoff, Jonathan Payne, and Sami Shaio). <span style=\"background-color: yellow;\">At the end of my internship, I was offered to join the Marimba core R&D team.</span> <span style=\"background-color: yellow;\">While working on Marimba, I learned various aspects of building large and scalable systems, protocols and algorithms for efficient and secure content distribution over network, and managing a heterogeneous infrastructure.</span> <span style=\"background-color: yellow;\">I was also actively involved in the research and design of a self-enabling infrastructure for Intel AMT Agent Presence, an efficient data structure for sending large statistics reports over WAN, and better management of OS runtime processes.</span> I have written white-papers and technical documents which have been incorporated into the products. <span style=\"background-color: yellow;\">At BMC, I developed many of the key Marimba features such as ‘Marimba’s support to Windows Server 2008 and Windows 7’, ‘Marimba’s package deployment support to x64 architecture (native x64 packaging support)’, ‘CRS(Common Reboot Service) framework’, ‘Policy-based power management’, ‘Intel AMT support’; ‘Marimba AMT Java SDK for Channel developers’, ‘Session migration of marimba client to better manage installation of user application when migrating from session 0’, ‘Certificate management’ and ‘Code signing module of Marimba (rewrote in order to move from using phaos library to RSA library)’.</span> I also played a major role in porting Marimba Client from Java Runtime 1.4 to Java Runtime 1.6 on Windows, Linux, Solaris, HP-UX and AIX. Throughout my stay at BMC, I had the opportunity to mentor many undergraduate and graduate interns. <span style=\"background-color: yellow;\">I mentored a few academic projects, mostly in collaboration with the CS department at my undergraduate school.</span> I also delivered many guest lectures. <span style=\"background-color: yellow;\">A few months ago, I founded a company, Cathysoft, with the idea of writing a clinically useful program to overcome the limitations of conventional computer-aided diagnosis.</span> <span style=\"background-color: yellow;\">However, after doing some initial research on simulation of human reasoning based on patient data for diagnosing diseases – I realized that I need to gain more experience and exposure to an excellent research environment.</span> Thus I decided to pursue a masters degree. <span style=\"background-color: yellow;\">I want to make sure that the company I am building is around for a long term and with this goal in mind I decided to study further in an institute that help me further my goals.</span> I am looking for a school that has the world-class study and research atmosphere, the best faculty, exceptional peers, and excellent infrastructure, an institute that can facilitate resources to help attain my ambitions. Stanford University has the unique distinction of being at the forefront of innovation and producing entrepreneurs. <span style=\"background-color: yellow;\">The university is the birthplace for the companies like Google, Yahoo, Sun Microsystems, HP, Cisco, Intel, VMWare, Electronic Arts, and many more..., and is known in the world as ‘The Place for Startups’.</span> Thus, Stanford University is my choice for the graduate studies. I am very optimistic about the future of my start-up, by being there. <span style=\"background-color: yellow;\">At Stanford, I hope to get an opportunity to meet the top management of some international high-tech start-ups and gain hands-on experience in starting and running a new enterprise.</span> It would help me understand the issues and policies that affect the climate for innovation and start-up success around the world. 2 </p>",
+    "transcript":"https://namankhurpia.pythonanywhere.com/media/catonefiles/consolidated.pdf",
+    "lor1":"https://namankhurpia.pythonanywhere.com/media/catonefiles/cao_b2.pdf",
+    "lor2":"https://namankhurpia.pythonanywhere.com/media/catonefiles/IWP_CAT-1_E1_Slot_Question__Key.pdf",
+    "lor3":"https://namankhurpia.pythonanywhere.com/media/catonefiles/Letter_of_Recommendation_-_koushik_dutta.pdf",
+  "gre":"https://namankhurpia.pythonanywhere.com/media/catonefiles/web_mining_cat_1.pdf",
+    "ielts":"https://namankhurpia.pythonanywhere.com/media/catonefiles/cao_b2.pdf"
+  }
+
+}
+
+
+data_to_insert_kashyap = {
+  "id":30124521,
+  "name":"Kashyap Soni",
+  "email":"kashyapsoni@gmail.com",
+  "date":"18/03/2023",
+  "notes":"Good candidate, can be considered for Acceptance, graduated from reputed university",
+  "uniValues":{
+    "val1":5,
+    "val2":4,
+    "val3":1,
+    "val4":2
+  },
+  "departmentValues":{
+    "val1":4,
+    "val2":5,
+    "val3":1,
+    "val4":3
+  },
+  "keyStats":{
+    "workexp":"None",
+    "university" : "National Institute of Technology",
+    "GPA":"9.5 / 10.0",
+    "GRE":"329 / 340",
+    "IELTS":"7.5 / 9.0",
+    "achievement1": "1st Prize winner at NIT HACK, created UPI money tranfer app",
+    "achievement2":"3rd prize winner at MLH Hack held at NIT Roorkee",
+    "achievement3":"3rd Prize Winner at Web Challenge – tech fest of NIT"
+  },
+  "undergradscores":{
+    "Algorithms":"[98,87,36,88]",
+    "Computer Science":"[48,37,96,88]",
+    "Operating System":"[32,95,28,96]",
+    "GPA Overall": "[11,28,68,93]"
+  },
+  "files":{
+    "resume":"https://namankhurpia.pythonanywhere.com/media/catonefiles/NamanKhurpiaResume.pdf",
+    "sop":"<p><span style=\"background-color: yellow;\">STATEMENT OF PURPOSE NAME : jinson.j.erinjeri Applying for M.S.</span> <span style=\"background-color: yellow;\">IN INDUSTRIAL ENGINEERING Firstly I would like to introduce myself as an under graduate student of the bachelor of engineering program From the M.S.Ramaiah institute of technology, one of the most prestigious institutions of the Bangalore U university.</span> I have completed my course of engineering in the field of 'Industrial Engineering’, which was for a period of four years. I graduated in the first class with distinction. I was ranked among the top five in the class. During these four years of my under graduate course, I gained in-depth understanding of the various techniques involved in problem solving, mainly to cater to the services of the industries. Manufacturing Processes, Operations Research, Industrial Management, Quantitative techniques were the other subjects which enabled me to blend the required action whenever an problem was posed to me. Behavioral Science was the most interesting subject which I mastered during this four year period. This subject provided me with valuable information which helped me to develop leadership skills. The factor of empathy really coerced me to instigate leadership skills.. <span style=\"background-color: yellow;\">Since computers have become inseparable part of INDUSTRIAL ENGINEERING I deemed it fit to learn more about computers and I am presently doing my course in C,C++.</span> I have worked on software packages like MS Project, LINDO, LOTUS 123. To meet my B.E. Degree requirement, I executed a project titled 'REDUCTION OF LEAD CYCLE FOR MANUFACTURE OF STEAM TURBINES' under the expert guidance of N.V.R.Naidu and this project was presented in the O.R. <span style=\"background-color: yellow;\">Society of India.</span> The main aim of the project was to reduce the lead cycle of manufacture of a particular class of turbine so as to reduce the inventory costs and enable the industry to forecast accurately for the period ahead. <span style=\"background-color: yellow;\">The techniques involved LINE OF BALANCE METHOD for scheduling and Controlling and Post college, I AM presently working in KIRLOSKAR ELECTRIC COMPANY WHERE IN I am going through a rigorous training program which will be completed very shortly.</span> The under graduate course as well as my training at KIRLOSKAR ELECTRIC COMPANY has provided me with a strong base for further growth in any of my desired fields. I would like to delve deeper into the fields of my choice and their technical aspects completely. I hope to acquire the requisite professional skills and develop a thorough understanding in these following areas. I wish to contribute towards these areas and indulge in research which ultimately should have a meaningful contribution to science and technology. <span style=\"background-color: yellow;\">I AM confident that my academic capability and analytical skills coupled with my perseverance and single-minded devotion will see me through to this goal.</span> <span style=\"background-color: yellow;\">To this end, the first step is a sound graduate study.</span> I have chosen the graduate program to further my interests. <span style=\"background-color: yellow;\">It is my belief that knowledge gained has to be shared.</span> <span style=\"background-color: yellow;\">I believe that imparting knowledge is an enjoyable and satisfying experience.</span> I have enjoyed giving ideas, lectures and making presentations on technical/non-technical topics at college and at the workplace. <span style=\"background-color: yellow;\">Hence, I am eager to obtain An assistantship. Consequently, I understand that the choice of the University is of paramount importance.</span> <span style=\"background-color: yellow;\">After perusing your brochures and consulting my professors, I reached the conclusion that the with its reputed faculty, excellent facilities, and tradition of academic excellence will be the ideal place to work towards the fulfillment of my goal.</span> <span style=\"background-color: yellow;\">Moreover, I am confident that the wholesome education that I will receive at the will stand me in good stead throughout my career.</span> <span style=\"background-color: yellow;\">Thanking you,</span> </p>"
+,
+    "transcript":"https://namankhurpia.pythonanywhere.com/media/catonefiles/consolidated.pdf",
+    "lor1":"https://namankhurpia.pythonanywhere.com/media/catonefiles/cao_b2.pdf",
+    "lor2":"https://namankhurpia.pythonanywhere.com/media/catonefiles/IWP_CAT-1_E1_Slot_Question__Key.pdf",
+    "lor3":"https://namankhurpia.pythonanywhere.com/media/catonefiles/Letter_of_Recommendation_-_koushik_dutta.pdf",
+  "gre":"https://namankhurpia.pythonanywhere.com/media/catonefiles/web_mining_cat_1.pdf",
+    "ielts":"https://namankhurpia.pythonanywhere.com/media/catonefiles/cao_b2.pdf"
+  }
+
+}
+
+
+data_to_insert_jasleen = {
+  "id":72152521,
+  "name":"Jasleen Kaur",
+  "email":"kashyapsoni@gmail.com",
+  "date":"18/03/2023",
+  "notes":"Good candidate, can be considered for Acceptance, graduated from reputed university",
+  "uniValues":{
+    "val1":5,
+    "val2":4,
+    "val3":3,
+    "val4":5
+  },
+  "departmentValues":{
+    "val1":4,
+    "val2":4,
+    "val3":5,
+    "val4":2
+  },
+  "keyStats":{
+    "workexp":"None",
+    "university" : "Gurunanak Dev University",
+    "GPA":"9.5 / 10.0",
+    "GRE":"329 / 340",
+    "IELTS":"7.5 / 9.0",
+    "achievement1": "1st Prize winner at Gurunanak HACK, developed banking application",
+    "achievement2":"2nd prize winner at MLH Hack held at NIT Roorkee",
+    "achievement3":"3rd Prize Winner at Web Challenge – tech fest of NIT"
+  },
+  "undergradscores":{
+    "Algorithms":"[98,87,36,88]",
+    "Computer Science":"[48,37,96,88]",
+    "Operating System":"[32,95,28,96]",
+    "GPA Overall": "[11,28,68,93]"
+  },
+  "files":{
+    "resume":"https://namankhurpia.pythonanywhere.com/media/catonefiles/NamanKhurpiaResume.pdf",
+    "sop":"<p><span style=\"background-color: yellow;\">STATEMENT OF PURPOSE NAME : jinson.j.erinjeri Applying for M.S.</span> <span style=\"background-color: yellow;\">IN INDUSTRIAL ENGINEERING Firstly I would like to introduce myself as an under graduate student of the bachelor of engineering program From the M.S.Ramaiah institute of technology, one of the most prestigious institutions of the Bangalore U university.</span> I have completed my course of engineering in the field of 'Industrial Engineering’, which was for a period of four years. I graduated in the first class with distinction. I was ranked among the top five in the class. During these four years of my under graduate course, I gained in-depth understanding of the various techniques involved in problem solving, mainly to cater to the services of the industries. Manufacturing Processes, Operations Research, Industrial Management, Quantitative techniques were the other subjects which enabled me to blend the required action whenever an problem was posed to me. Behavioral Science was the most interesting subject which I mastered during this four year period. This subject provided me with valuable information which helped me to develop leadership skills. The factor of empathy really coerced me to instigate leadership skills.. <span style=\"background-color: yellow;\">Since computers have become inseparable part of INDUSTRIAL ENGINEERING I deemed it fit to learn more about computers and I am presently doing my course in C,C++.</span> I have worked on software packages like MS Project, LINDO, LOTUS 123. To meet my B.E. Degree requirement, I executed a project titled 'REDUCTION OF LEAD CYCLE FOR MANUFACTURE OF STEAM TURBINES' under the expert guidance of N.V.R.Naidu and this project was presented in the O.R. <span style=\"background-color: yellow;\">Society of India.</span> The main aim of the project was to reduce the lead cycle of manufacture of a particular class of turbine so as to reduce the inventory costs and enable the industry to forecast accurately for the period ahead. <span style=\"background-color: yellow;\">The techniques involved LINE OF BALANCE METHOD for scheduling and Controlling and Post college, I AM presently working in KIRLOSKAR ELECTRIC COMPANY WHERE IN I am going through a rigorous training program which will be completed very shortly.</span> The under graduate course as well as my training at KIRLOSKAR ELECTRIC COMPANY has provided me with a strong base for further growth in any of my desired fields. I would like to delve deeper into the fields of my choice and their technical aspects completely. I hope to acquire the requisite professional skills and develop a thorough understanding in these following areas. I wish to contribute towards these areas and indulge in research which ultimately should have a meaningful contribution to science and technology. <span style=\"background-color: yellow;\">I AM confident that my academic capability and analytical skills coupled with my perseverance and single-minded devotion will see me through to this goal.</span> <span style=\"background-color: yellow;\">To this end, the first step is a sound graduate study.</span> I have chosen the graduate program to further my interests. <span style=\"background-color: yellow;\">It is my belief that knowledge gained has to be shared.</span> <span style=\"background-color: yellow;\">I believe that imparting knowledge is an enjoyable and satisfying experience.</span> I have enjoyed giving ideas, lectures and making presentations on technical/non-technical topics at college and at the workplace. <span style=\"background-color: yellow;\">Hence, I am eager to obtain An assistantship. Consequently, I understand that the choice of the University is of paramount importance.</span> <span style=\"background-color: yellow;\">After perusing your brochures and consulting my professors, I reached the conclusion that the with its reputed faculty, excellent facilities, and tradition of academic excellence will be the ideal place to work towards the fulfillment of my goal.</span> <span style=\"background-color: yellow;\">Moreover, I am confident that the wholesome education that I will receive at the will stand me in good stead throughout my career.</span> <span style=\"background-color: yellow;\">Thanking you,</span> </p>"
+,
+    "transcript":"https://namankhurpia.pythonanywhere.com/media/catonefiles/consolidated.pdf",
+    "lor1":"https://namankhurpia.pythonanywhere.com/media/catonefiles/cao_b2.pdf",
+    "lor2":"https://namankhurpia.pythonanywhere.com/media/catonefiles/IWP_CAT-1_E1_Slot_Question__Key.pdf",
+    "lor3":"https://namankhurpia.pythonanywhere.com/media/catonefiles/Letter_of_Recommendation_-_koushik_dutta.pdf",
+  "gre":"https://namankhurpia.pythonanywhere.com/media/catonefiles/web_mining_cat_1.pdf",
+    "ielts":"https://namankhurpia.pythonanywhere.com/media/catonefiles/cao_b2.pdf"
+  }
+
+}
